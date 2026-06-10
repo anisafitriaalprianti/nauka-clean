@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main
       style={{
-        minHeight: "100vh",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -16,7 +16,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔥 1 UNIT VISUAL (INI KUNCI SEBENARNYA) */}
+      {/* 🔥 1 BLOCK UTAMA (CENTER TOTAL) */}
       <div
         style={{
           display: "flex",
@@ -36,23 +36,23 @@ export default function Home() {
           }}
         />
 
-        {/* TEXT GROUP (DISET SEBAGAI SATU BLOK) */}
+        {/* TEXT + BUTTON BLOCK (DIKETATKAN BIAR NYATU) */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
 
-            // 🔥 INI YANG NGURANGIN “RASA JAUH”
-            marginTop: "4px",
-            gap: "6px",
+            // 🔥 INI KUNCI “TIDAK TERASA JAUH”
+            marginTop: "2px",
+            gap: "4px",
           }}
         >
           <h1
             style={{
               fontSize: "20px",
               fontWeight: 500,
-              lineHeight: "1.35",
+              lineHeight: "1.3",
               margin: 0,
             }}
           >
@@ -62,7 +62,7 @@ export default function Home() {
           <p
             style={{
               fontSize: "13.5px",
-              lineHeight: "1.6",
+              lineHeight: "1.5",
               opacity: 0.75,
               margin: 0,
               maxWidth: "300px",
@@ -73,7 +73,7 @@ export default function Home() {
 
           <button
             style={{
-              marginTop: "8px",
+              marginTop: "6px",
               padding: "12px 24px",
               borderRadius: "16px",
               border: "1px solid rgba(44,42,40,0.25)",
