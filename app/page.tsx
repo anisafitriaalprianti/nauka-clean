@@ -15,47 +15,40 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 1 KESATUAN */}
+      {/* 🔥 1 SYSTEM JARAK (ONLY GAP) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "14px",
+
+          // 🔥 INI SATU-SATUNYA PENGATUR JARAK
+          gap: "6px",
         }}
       >
 
-        {/* LOGO + HEADLINE BLOCK */}
-        <div
+        {/* LOGO */}
+        <img
+          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
+          alt="Nauka Logo"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px",
+            width: "180px",
+            height: "auto",
+            display: "block",
+          }}
+        />
+
+        {/* HEADLINE */}
+        <h1
+          style={{
+            fontSize: "20px",
+            fontWeight: 500,
+            lineHeight: "1.25",
+            margin: 0, // 🔥 penting: jangan pakai margin lagi
           }}
         >
-          <img
-            src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
-            alt="Nauka Logo"
-            style={{
-              width: "240px", // 🔥 DIPERBESAR
-              height: "auto",
-              display: "block",
-              opacity: 0.95,
-            }}
-          />
-
-          <h1
-            style={{
-              fontSize: "20px",
-              fontWeight: 500,
-              lineHeight: "1.25",
-              margin: 0,
-            }}
-          >
-            Sebuah ruang kecil untuk mengantar momen
-          </h1>
-        </div>
+          Sebuah ruang kecil untuk mengantar momen
+        </h1>
 
         {/* SUBTEXT */}
         <p
@@ -63,7 +56,7 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.5",
             opacity: 0.75,
-            margin: 0,
+            margin: 0, // 🔥 penting
             maxWidth: "300px",
           }}
         >
@@ -73,6 +66,7 @@ export default function Home() {
         {/* BUTTON */}
         <button
           style={{
+            marginTop: "2px", // kecil aja biar tetap natural
             padding: "12px 24px",
             borderRadius: "16px",
             border: "1px solid rgba(44,42,40,0.25)",
