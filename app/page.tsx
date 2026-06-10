@@ -15,45 +15,39 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* HERO WRAPPER (dibikin lebih “ketarik ke atas center feel”) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-          transform: "translateY(-12px)", // 🔥 kecil tapi ngunci center
+          
+          // 🔥 INI KUNCI: semua isi bawah dinaikkan sedikit
+          transform: "translateY(-30px)",
         }}
       >
-        {/* LOGO + HEADLINE = 1 UNIT VISUAL */}
-        <div
+        {/* LOGO */}
+        <img
+          src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
+          alt="Nauka Logo"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "4px", // 🔥 ini yang bikin “nyatu”
+            width: "250px",
+            height: "auto",
+            marginBottom: "10px",
+          }}
+        />
+
+        {/* HEADLINE */}
+        <h1
+          style={{
+            fontSize: "24px",
+            fontWeight: 500,
+            lineHeight: "1.4",
+            margin: 0,
           }}
         >
-          <img
-            src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
-            alt="Nauka Logo"
-            style={{
-              width: "250px",
-              height: "auto",
-            }}
-          />
-
-          <h1
-            style={{
-              fontSize: "24px",
-              fontWeight: 500,
-              lineHeight: "1.4",
-              margin: 0,
-            }}
-          >
-            Sebuah ruang kecil untuk mengantar momen
-          </h1>
-        </div>
+          Sebuah ruang kecil untuk mengantar momen
+        </h1>
 
         {/* SUBTEXT */}
         <p
@@ -61,17 +55,17 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: "16px 0 0 0",
+            margin: "18px 0 0 0",
             maxWidth: "320px",
           }}
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* CTA */}
+        {/* BUTTON */}
         <button
           style={{
-            marginTop: "20px",
+            marginTop: "22px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
