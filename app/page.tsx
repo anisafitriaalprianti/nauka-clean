@@ -38,7 +38,7 @@ export default function Home() {
             src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
             alt="Nauka Logo"
             style={{
-              width: "190px", // 🔥 DIPERBESAR
+              width: "240px", // 🔥 DIPERBESAR
               height: "auto",
               display: "block",
               opacity: 0.95,
