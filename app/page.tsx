@@ -23,8 +23,8 @@ export default function Home() {
           alignItems: "center",
           maxWidth: "380px",
 
-          // 🔥 NAIK BESAR SEKALIAN (BUKAN SEDIKIT LAGI)
-          transform: "translateY(-70px)",
+          // 🔥 INI FIX BESAR SESUAI “5 CM KE ATAS”
+          transform: "translateY(-200px)",
         }}
       >
         {/* LOGO */}
