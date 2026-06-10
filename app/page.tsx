@@ -1,4 +1,19 @@
+'use client'
+
+import { useState } from "react"
+
 export default function Home() {
+  const [theme, setTheme] = useState("warm")
+  const [sound, setSound] = useState(false)
+
+  const themes: any = {
+    warm: "#F6F1EA",
+    night: "#1C1C1C",
+    green: "#E9F5EC"
+  }
+
+  const textColor = theme === "night" ? "#F5F5F5" : "#222"
+
   return (
     <main style={{
       minHeight: "100vh",
@@ -6,14 +21,16 @@ export default function Home() {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      background: "#F6F1EA",
+      background: themes[theme],
+      color: textColor,
       fontFamily: "serif",
       textAlign: "center",
-      padding: "24px"
+      padding: "24px",
+      transition: "0.4s"
     }}>
 
       <h1 style={{
-        fontSize: "40px",
+        fontSize: "42px",
         letterSpacing: "10px",
         fontWeight: 300
       }}>
@@ -21,24 +38,43 @@ export default function Home() {
       </h1>
 
       <p style={{
-        marginTop: "14px",
-        fontSize: "18px",
+        marginTop: "12px",
         maxWidth: "320px",
-        color: "#333",
-        lineHeight: "1.6"
+        lineHeight: "1.6",
+        fontSize: "16px"
       }}>
-        Sebuah ruang kecil untuk sebuah momen yang ingin dikenang dengan tenang
+        Siap merasakan ketenangan di sebuah momen?
       </p>
+
+      {/* Theme Selector */}
+      <div style={{ marginTop: "24px", display: "flex", gap: "8px" }}>
+        <button onClick={() => setTheme("warm")}>Warm</button>
+        <button onClick={() => setTheme("night")}>Night</button>
+        <button onClick={() => setTheme("green")}>Nature</button>
+      </div>
+
+      {/* Sound Toggle */}
+      <button
+        onClick={() => setSound(!sound)}
+        style={{
+          marginTop: "16px",
+          padding: "8px 16px",
+          borderRadius: "20px",
+          border: "1px solid #999",
+          background: "transparent"
+        }}
+      >
+        {sound ? "Sound ON 🔊" : "Sound OFF 🔇"}
+      </button>
 
       <button style={{
         marginTop: "28px",
-        padding: "12px 28px",
+        padding: "12px 26px",
         borderRadius: "999px",
-        border: "1px solid #333",
-        background: "transparent",
-        cursor: "pointer"
+        border: "1px solid currentColor",
+        background: "transparent"
       }}>
-        Masuk
+        Buka Undangan
       </button>
 
     </main>
