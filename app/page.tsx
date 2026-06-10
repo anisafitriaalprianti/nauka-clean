@@ -31,7 +31,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "8px",
+            gap: "4px",
           }}
         >
           <img
