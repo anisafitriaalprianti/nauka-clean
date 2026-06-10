@@ -49,38 +49,33 @@ export default function Undangan() {
           UNDANGAN NAUKA
         </h1>
 
-        {/* teks utama */}
-        <p style={{
-          fontSize: "14px",
-          lineHeight: "1.9",
-          opacity: 0.85,
-          marginBottom: "26px"
-        }}>
-          Dengan penuh rasa syukur, kami mengundang kehadiran Anda
-          dalam momen yang insyaAllah penuh keberkahan.
-        </p>
-
-        {/* detail acara */}
+        {/* KENAPA NAUKA */}
         <div style={{
+          marginBottom: "20px",
+          padding: "12px 10px",
           borderTop: "1px solid #eee",
-          paddingTop: "18px",
-          marginBottom: "18px"
+          borderBottom: "1px solid #eee"
         }}>
-          <p style={{ margin: "6px 0" }}><b>Akad:</b> 10.00 WIB</p>
-          <p style={{ margin: "6px 0" }}><b>Resepsi:</b> 13.00 WIB</p>
-          <p style={{ margin: "6px 0" }}><b>Lokasi:</b> Akan diisi</p>
+
+          <p style={{
+            fontSize: "12px",
+            letterSpacing: "3px",
+            opacity: 0.6,
+            marginBottom: "10px"
+          }}>
+            KENAPA NAUKA
+          </p>
+
+          <p style={{
+            fontSize: "13px",
+            lineHeight: "1.8",
+            opacity: 0.78,
+            fontStyle: "italic"
+          }}>
+            “Nauka lahir dari ruang kecil yang ingin
+            menjaga momen tetap sederhana dan bermakna.”
+          </p>
+
         </div>
 
-        {/* penutup */}
-        <p style={{
-          fontStyle: "italic",
-          fontSize: "13px",
-          opacity: 0.7
-        }}>
-          Merupakan kehormatan bagi kami atas kehadiran Anda.
-        </p>
-
-      </div>
-    </main>
-  )
-}
+        {/* teks
