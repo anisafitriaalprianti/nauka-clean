@@ -71,16 +71,15 @@ export default function Home() {
         {sound ? "Sound ON 🔊" : "Sound OFF 🔇"}
       </button>
 
-      <button style={{
-        marginTop: "28px",
-        padding: "12px 26px",
-        borderRadius: "999px",
-        border: "1px solid currentColor",
-        background: "transparent"
-      }}>
-        Buka Undangan
-      </button>
-
-    </main>
-  )
-}
+      <a href="/undangan">
+  <button style={{
+    marginTop: "28px",
+    padding: "12px 26px",
+    borderRadius: "999px",
+    border: "1px solid currentColor",
+    background: "transparent",
+    cursor: "pointer"
+  }}>
+    Buka Undangan
+  </button>
+</a>
