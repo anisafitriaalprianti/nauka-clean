@@ -14,27 +14,43 @@ export default function Home() {
         textAlign: "center",
         padding: "24px",
         position: "relative",
+        overflow: "hidden",
       }}
     >
-      {/* 🔥 VISUAL ANCHOR (INI YANG BIKIN ATAS GAK KOSONG LAGI) */}
+      {/* 🌙 ORNAMENT HALUS (BACKGROUND FEEL, BUKAN DEKOR RAMAI) */}
       <div
         style={{
           position: "absolute",
-          top: "18%",
-          width: "120px",
-          height: "1px",
-          background: "rgba(44, 42, 40, 0.08)",
+          top: "-80px",
+          left: "-80px",
+          width: "220px",
+          height: "220px",
+          background: "radial-gradient(circle, rgba(44,42,40,0.06), transparent 70%)",
+          borderRadius: "50%",
         }}
       />
 
-      {/* HERO CORE */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "-100px",
+          right: "-100px",
+          width: "260px",
+          height: "260px",
+          background: "radial-gradient(circle, rgba(44,42,40,0.05), transparent 70%)",
+          borderRadius: "50%",
+        }}
+      />
+
+      {/* CORE */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-          transform: "translateY(-1%)",
+          transform: "translateY(-2%)",
+          zIndex: 2,
         }}
       >
         {/* LOGO */}
@@ -42,18 +58,18 @@ export default function Home() {
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
-            width: "260px",
+            width: "250px",
             height: "auto",
-            marginBottom: "28px",
+            marginBottom: "26px",
           }}
         />
 
         {/* HEADLINE */}
         <h1
           style={{
-            fontSize: "42px",
+            fontSize: "40px",
             fontWeight: 600,
-            lineHeight: "1.2",
+            lineHeight: "1.25",
             letterSpacing: "-0.6px",
             margin: 0,
           }}
@@ -64,8 +80,8 @@ export default function Home() {
         {/* SUBTEXT */}
         <p
           style={{
-            marginTop: "22px",
-            fontSize: "17px",
+            marginTop: "20px",
+            fontSize: "16.5px",
             lineHeight: "1.75",
             opacity: 0.8,
             maxWidth: "340px",
@@ -75,7 +91,7 @@ export default function Home() {
         </p>
 
         {/* CTA */}
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "42px" }}>
           <button
             style={{
               padding: "14px 28px",
@@ -86,6 +102,7 @@ export default function Home() {
               fontSize: "15px",
               fontWeight: 500,
               cursor: "pointer",
+              backdropFilter: "blur(6px)",
             }}
           >
             Mulai perjalanan
