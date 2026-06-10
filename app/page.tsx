@@ -33,10 +33,12 @@ export default function Home() {
   src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
   alt="Nauka Logo"
   style={{
-    width: "140px",
-    height: "auto",
-    marginBottom: "24px"
-  }}
+  width: "180px",
+  height: "auto",
+  marginBottom: "28px",
+  transition: "0.3s ease"
+}}
+    
 />
 
       <p style={{
