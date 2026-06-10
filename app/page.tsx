@@ -59,4 +59,25 @@ export default function Home() {
             maxWidth: "320px",
           }}
         >
-          Ruang
+          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+        </p>
+
+        {/* CTA (DIAMANKAN, TIDAK DIUBAH STYLE-NYA) */}
+        <button
+          style={{
+            marginTop: "28px",
+            padding: "12px 22px",
+            borderRadius: "14px",
+            border: "none",
+            background: "#2C2A28",
+            color: "#FAF7F2",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Mulai
+        </button>
+      </div>
+    </main>
+  );
+}
