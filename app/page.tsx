@@ -14,74 +14,71 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
-        position: "relative",
       }}
     >
-      {/* HERO CORE (CENTER ONLY THIS) */}
+      {/* HERO CORE */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          maxWidth: "360px",
-          transform: "translateY(-2%)",
+          maxWidth: "380px",
         }}
       >
+        {/* LOGO */}
         <img
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
-            width: "240px",
+            width: "260px",
             height: "auto",
             marginBottom: "28px",
           }}
         />
 
+        {/* HEADLINE */}
         <h1
           style={{
-            fontSize: "38px",
+            fontSize: "42px",
             fontWeight: 600,
-            lineHeight: "1.25",
+            lineHeight: "1.2",
+            letterSpacing: "-0.6px",
             margin: 0,
           }}
         >
           Sebuah ruang kecil untuk mengantar momen
         </h1>
 
+        {/* SUBTEXT */}
         <p
           style={{
-            marginTop: "20px",
-            fontSize: "16px",
-            lineHeight: "1.7",
-            opacity: 0.78,
+            marginTop: "22px",
+            fontSize: "17px",
+            lineHeight: "1.75",
+            opacity: 0.8,
+            maxWidth: "340px",
           }}
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
-      </div>
 
-      {/* CTA FLOATING (REMOVES BOTTOM WEIGHT) */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "64px",
-        }}
-      >
-        <button
-          style={{
-            padding: "12px 26px",
-            borderRadius: "999px",
-            border: "1px solid rgba(44, 42, 40, 0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            fontSize: "14px",
-            fontWeight: 500,
-            opacity: 0.9,
-            cursor: "pointer",
-          }}
-        >
-          Mulai perjalanan
-        </button>
+        {/* CTA (IN FLOW — NOT MUSUHAN, NOT FLOATING) */}
+        <div style={{ marginTop: "40px" }}>
+          <button
+            style={{
+              padding: "14px 28px",
+              borderRadius: "999px",
+              border: "1px solid rgba(44, 42, 40, 0.22)",
+              background: "rgba(44, 42, 40, 0.06)",
+              color: "#2C2A28",
+              fontSize: "15px",
+              fontWeight: 500,
+              cursor: "pointer",
+            }}
+          >
+            Mulai perjalanan
+          </button>
+        </div>
       </div>
     </main>
   );
