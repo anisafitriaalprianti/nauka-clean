@@ -23,9 +23,9 @@ export default function Hero() {
       >
         {/* LOGO */}
         <motion.div
-          initial={{ opacity: 0, y: -8 }}
+          initial={{ opacity: 0, y: -6 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           style={{
             fontSize: 16,
             letterSpacing: 2,
@@ -36,23 +36,24 @@ export default function Hero() {
           NAUKA
         </motion.div>
 
-        {/* CONNECTOR (INI INTI FIX-NYA) */}
+        {/* CONNECTOR (FIXED - NO WIDTH ANIMATION BUG) */}
         <motion.div
-          initial={{ width: 0, opacity: 0 }}
-          animate={{ width: 72, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
           style={{
+            width: 72,
             height: 1,
-            background: 'rgba(44, 42, 40, 0.10)',
+            background: 'rgba(44, 42, 40, 0.15)',
             margin: '0 auto 18px auto',
           }}
         />
 
         {/* HEADLINE */}
         <motion.h1
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
           style={{
             fontSize: 28,
             fontWeight: 500,
@@ -67,4 +68,38 @@ export default function Hero() {
 
         {/* SUBTEXT */}
         <motion.p
-          initial
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+          style={{
+            fontSize: 14,
+            color: 'rgba(44, 42, 40, 0.65)',
+            lineHeight: 1.6,
+            marginBottom: 24,
+          }}
+        >
+          Undangan digital yang sederhana, tenang, dan penuh makna.
+        </motion.p>
+
+        {/* BUTTON */}
+        <motion.button
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.45 }}
+          whileTap={{ scale: 0.97 }}
+          style={{
+            padding: '10px 18px',
+            borderRadius: 999,
+            background: '#2C2A28',
+            color: '#fff',
+            fontSize: 13,
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          Buka Undangan
+        </motion.button>
+      </div>
+    </main>
+  );
+}
