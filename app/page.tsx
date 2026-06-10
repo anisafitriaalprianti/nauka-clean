@@ -24,9 +24,9 @@ export default function Home() {
         }}
       >
 
-        {/* LOGO (AMAN, TANPA EFFECT) */}
+        {/* LOGO (PAKAI LINK IMGBB YANG SUDAH DI-REPAIR) */}
         <img
-          src="/logo.png"
+          src="https://i.ibb.co/pjRLN4H4/file-00000000aa1471fab057b72e1ac28d6b.png"
           alt="Nauka Logo"
           style={{
             width: "200px",
@@ -48,9 +48,3 @@ export default function Home() {
         </h1>
 
         {/* SUBTEXT */}
-        <p
-          style={{
-            fontSize: "13.5px",
-            lineHeight: "1.7",
-            opacity: 0.75,
-            margin: "14px 0 0 0",
