@@ -15,12 +15,16 @@ export default function Home() {
         padding: "24px",
       }}
     >
+      {/* HERO WRAPPER */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
+
+          // 🔥 INI KUNCINYA
+          transform: "translateY(-18px)", // angkat 1 blok ke atas
         }}
       >
         {/* LOGO */}
@@ -30,9 +34,7 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-
-            // 🔥 kunci: bukan jarak, tapi “naikkan rasa nyatu”
-            marginBottom: "-6px",
+            marginBottom: "10px",
           }}
         />
 
