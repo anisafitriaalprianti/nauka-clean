@@ -34,7 +34,7 @@ export default function Home() {
         letterSpacing: "10px",
         fontWeight: 300
       }}>
-        <img
+   <img
   src="https://i.ibb.co/B5KQW8ZB/undangan-by-nauka.png"
   alt="Nauka Logo"
   style={{
