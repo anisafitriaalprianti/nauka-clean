@@ -15,7 +15,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 1 KESATUAN HERO */}
+      {/* HERO BLOCK */}
       <div
         style={{
           display: "flex",
@@ -32,19 +32,17 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-
-            // 🔥 INI YANG KITA FIX
-            marginBottom: "10px", // sedikit lebih rapat ke headline
+            marginBottom: "14px", // 🔥 fix jarak saja
           }}
         />
 
-        {/* HEADLINE (TIDAK DIUBAH SAMA SEKALI) */}
+        {/* HEADLINE */}
         <h1
           style={{
-            fontSize: "40px",
-            fontWeight: 600,
-            lineHeight: "1.25",
-            letterSpacing: "-0.6px",
+            fontSize: "32px",
+            fontWeight: 500,
+            lineHeight: "1.3",
+            letterSpacing: "-0.5px",
             margin: 0,
           }}
         >
@@ -54,33 +52,11 @@ export default function Home() {
         {/* SUBTEXT */}
         <p
           style={{
-            fontSize: "16.5px",
-            lineHeight: "1.7",
-            opacity: 0.8,
+            fontSize: "14px",
+            lineHeight: "1.6",
+            opacity: 0.75,
             margin: 0,
-            maxWidth: "340px",
+            maxWidth: "320px",
           }}
         >
-          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-        </p>
-
-        {/* CTA */}
-        <button
-          style={{
-            marginTop: "8px",
-            padding: "14px 28px",
-            borderRadius: "999px",
-            border: "1px solid rgba(44, 42, 40, 0.22)",
-            background: "rgba(44, 42, 40, 0.06)",
-            color: "#2C2A28",
-            fontSize: "15px",
-            fontWeight: 500,
-            cursor: "pointer",
-          }}
-        >
-          Mulai perjalanan
-        </button>
-      </div>
-    </main>
-  );
-}
+          Ruang
