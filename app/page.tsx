@@ -15,71 +15,54 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔥 1 SYSTEM JARAK (ONLY GAP) */}
+      {/* 🔥 OUTER CONTAINER (GLOBAL SPACING) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
 
-          // 🔥 INI SATU-SATUNYA PENGATUR JARAK
-          gap: "6px",
+          // jarak antar SECTION
+          gap: "14px",
         }}
       >
 
-        {/* LOGO */}
-        <img
-          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
-          alt="Nauka Logo"
+        {/* 🔥 GROUP 1: LOGO + HEADLINE (HARUS DEKAT) */}
+        <div
           style={{
-            width: "240px",
-            height: "auto",
-            display: "block",
-          }}
-        />
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
 
-        {/* HEADLINE */}
-        <h1
-          style={{
-            fontSize: "20px",
-            fontWeight: 500,
-            lineHeight: "1.25",
-            margin: 0, // 🔥 penting: jangan pakai margin lagi
+            // INI KUNCI NYATU
+            gap: "6px",
           }}
         >
-          Sebuah ruang kecil untuk mengantar momen
-        </h1>
+          <img
+            src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
+            alt="Nauka Logo"
+            style={{
+              width: "240px",
+              height: "auto",
+              display: "block",
+            }}
+          />
 
-        {/* SUBTEXT */}
+          <h1
+            style={{
+              fontSize: "20px",
+              fontWeight: 500,
+              lineHeight: "1.25",
+              margin: 0,
+            }}
+          >
+            Sebuah ruang kecil untuk mengantar momen
+          </h1>
+        </div>
+
+        {/* 🔥 GROUP 2: SUBTEXT */}
         <p
           style={{
             fontSize: "13.5px",
             lineHeight: "1.5",
-            opacity: 0.75,
-            margin: 0, // 🔥 penting
-            maxWidth: "300px",
-          }}
-        >
-          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-        </p>
-
-        {/* BUTTON */}
-        <button
-          style={{
-            marginTop: "2px", // kecil aja biar tetap natural
-            padding: "12px 24px",
-            borderRadius: "16px",
-            border: "1px solid rgba(44,42,40,0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
-
-      </div>
-    </main>
-  );
-}
+            opacity
