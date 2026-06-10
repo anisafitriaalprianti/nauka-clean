@@ -15,6 +15,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
+      {/* OUTER WRAPPER */}
       <div
         style={{
           display: "flex",
@@ -23,69 +24,73 @@ export default function Home() {
           maxWidth: "380px",
         }}
       >
-        {/* 🌙 LOGO (dibuat lebih “soft presence”) */}
-        <img
-          src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
-          alt="Nauka Logo"
-          style={{
-            width: "240px",
-            height: "auto",
-            opacity: 0.95,
-            marginBottom: "6px",
-          }}
-        />
-
-        {/* 🌙 VISUAL BRIDGE (INI KUNCI DREAMY FEEL) */}
+        
+        {/* 🪶 HERO CORE (INI KUNCI UTAMA) */}
         <div
           style={{
-            width: "40px",
-            height: "1px",
-            background: "rgba(44,42,40,0.25)",
-            margin: "6px 0 10px 0",
-          }}
-        />
-
-        {/* 🌙 HEADLINE */}
-        <h1
-          style={{
-            fontSize: "24px",
-            fontWeight: 500,
-            lineHeight: "1.5",
-            margin: 0,
-            letterSpacing: "-0.2px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "6px",
           }}
         >
-          Sebuah ruang kecil untuk mengantar momen
-        </h1>
+          <img
+            src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
+            alt="Nauka Logo"
+            style={{
+              width: "250px",
+              height: "auto",
+            }}
+          />
 
-        {/* 🌙 SUBTEXT */}
-        <p
+          <h1
+            style={{
+              fontSize: "24px",
+              fontWeight: 500,
+              lineHeight: "1.4",
+              margin: 0,
+            }}
+          >
+            Sebuah ruang kecil untuk mengantar momen
+          </h1>
+        </div>
+
+        {/* 🪶 SUPPORT LAYER */}
+        <div
           style={{
-            fontSize: "13.5px",
-            lineHeight: "1.7",
-            opacity: 0.75,
-            margin: "14px 0 0 0",
+            marginTop: "14px",
             maxWidth: "300px",
           }}
         >
-          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-        </p>
+          <p
+            style={{
+              fontSize: "13.5px",
+              lineHeight: "1.7",
+              opacity: 0.75,
+              margin: 0,
+            }}
+          >
+            Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+          </p>
+        </div>
 
-        {/* 🌙 BUTTON (dibuat lebih “calm”, bukan bold banget) */}
-        <button
-          style={{
-            marginTop: "20px",
-            padding: "12px 22px",
-            borderRadius: "14px",
-            border: "1px solid rgba(44,42,40,0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
+        {/* 🪶 ACTION LAYER */}
+        <div style={{ marginTop: "22px" }}>
+          <button
+            style={{
+              padding: "12px 22px",
+              borderRadius: "14px",
+              border: "1px solid rgba(44,42,40,0.25)",
+              background: "transparent",
+              color: "#2C2A28",
+              cursor: "pointer",
+              fontSize: "14px",
+            }}
+          >
+            Mulai
+          </button>
+        </div>
+
       </div>
     </main>
   );
