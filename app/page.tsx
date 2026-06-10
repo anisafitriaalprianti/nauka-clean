@@ -29,12 +29,7 @@ export default function Home() {
       transition: "0.4s"
     }}>
 
-      <h1 style={{
-        fontSize: "42px",
-        letterSpacing: "10px",
-        fontWeight: 300
-      }}>
-   <img
+     <img
   src="https://i.ibb.co/B5KQW8ZB/undangan-by-nauka.png"
   alt="Nauka Logo"
   style={{
@@ -43,7 +38,6 @@ export default function Home() {
     marginBottom: "24px"
   }}
 />
-      </h1>
 
       <p style={{
         marginTop: "12px",
