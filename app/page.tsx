@@ -14,9 +14,10 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
+        transform: "translateY(-1%)",
       }}
     >
-      {/* CORE */}
+      {/* CORE CONTENT */}
       <div
         style={{
           display: "flex",
@@ -62,18 +63,19 @@ export default function Home() {
         </p>
       </div>
 
-      {/* CTA (dibuat lebih “dekat & ramah”) */}
+      {/* CTA (LIGHT WEIGHT — TIDAK NARIK VISUAL KE BAWAH) */}
       <div style={{ marginTop: "42px" }}>
         <button
           style={{
-            padding: "14px 28px",
+            padding: "12px 26px",
             borderRadius: "999px",
-            border: "1px solid rgba(44, 42, 40, 0.35)",
-            background: "rgba(44, 42, 40, 0.10)",
+            border: "1px solid rgba(44, 42, 40, 0.25)",
+            background: "transparent",
             color: "#2C2A28",
             cursor: "pointer",
-            fontSize: "15px",
+            fontSize: "14px",
             fontWeight: 500,
+            opacity: 0.85,
           }}
         >
           Mulai perjalanan
