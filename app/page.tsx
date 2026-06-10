@@ -16,7 +16,6 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* HERO WRAPPER */}
       <div
         style={{
           display: "flex",
@@ -25,7 +24,7 @@ export default function Home() {
         }}
       >
 
-        {/* LOGO */}
+        {/* 🔥 LOGO DITURUNKAN (KUNCI UTAMA) */}
         <img
           src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
           alt="Nauka Logo"
@@ -33,6 +32,9 @@ export default function Home() {
             width: "170px",
             height: "auto",
             display: "block",
+
+            // ini yang bikin dia “turun mendekat”
+            marginBottom: "6px",
           }}
         />
 
@@ -42,9 +44,6 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-
-            // 🔥 INI KUNCI UTAMA (dipadatkan)
-            marginTop: "0px",
             gap: "2px",
           }}
         >
@@ -53,7 +52,7 @@ export default function Home() {
               fontSize: "20px",
               fontWeight: 500,
               lineHeight: "1.25",
-              margin: "2px 0 0 0",
+              margin: 0,
             }}
           >
             Sebuah ruang kecil untuk mengantar momen
@@ -64,7 +63,7 @@ export default function Home() {
               fontSize: "13.5px",
               lineHeight: "1.5",
               opacity: 0.75,
-              margin: "0",
+              margin: 0,
               maxWidth: "300px",
             }}
           >
