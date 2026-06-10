@@ -15,14 +15,12 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* HERO BLOCK */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-          gap: "18px",
         }}
       >
         {/* LOGO */}
@@ -32,17 +30,18 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "14px", // 🔥 fix jarak saja
+            marginBottom: "6px",
+            transform: "translateY(-2px)", // tetap sedikit “nempel”
           }}
         />
 
-        {/* HEADLINE */}
+        {/* HEADLINE (DIKECILIN SESUAI REQUEST) */}
         <h1
           style={{
-            fontSize: "32px",
+            fontSize: "28px", // 🔥 ini yang kamu minta dikecilin
             fontWeight: 500,
-            lineHeight: "1.3",
-            letterSpacing: "-0.5px",
+            lineHeight: "1.35",
+            letterSpacing: "-0.3px",
             margin: 0,
           }}
         >
@@ -52,20 +51,20 @@ export default function Home() {
         {/* SUBTEXT */}
         <p
           style={{
-            fontSize: "14px",
+            fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: 0,
+            margin: "22px 0 0 0",
             maxWidth: "320px",
           }}
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* CTA (DIAMANKAN, TIDAK DIUBAH STYLE-NYA) */}
+        {/* CTA (TETAP FAVORIT KAMU) */}
         <button
           style={{
-            marginTop: "28px",
+            marginTop: "26px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
