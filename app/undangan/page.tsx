@@ -22,7 +22,6 @@ export default function Undangan() {
         animation: "fadeIn 0.8s ease"
       }}>
 
-        {/* animasi */}
         <style>{`
           @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -30,7 +29,6 @@ export default function Undangan() {
           }
         `}</style>
 
-        {/* header kecil */}
         <p style={{
           fontSize: "12px",
           letterSpacing: "5px",
@@ -40,7 +38,6 @@ export default function Undangan() {
           THE WEDDING INVITATION
         </p>
 
-        {/* judul */}
         <h1 style={{
           fontSize: "30px",
           letterSpacing: "3px",
@@ -49,7 +46,6 @@ export default function Undangan() {
           UNDANGAN NAUKA
         </h1>
 
-        {/* KENAPA NAUKA */}
         <div style={{
           marginBottom: "20px",
           padding: "12px 10px",
@@ -78,4 +74,35 @@ export default function Undangan() {
 
         </div>
 
-        {/* teks
+        <p style={{
+          fontSize: "14px",
+          lineHeight: "1.9",
+          opacity: 0.85,
+          marginBottom: "26px"
+        }}>
+          Dengan penuh rasa syukur, kami mengundang kehadiran Anda
+          dalam momen yang insyaAllah penuh keberkahan.
+        </p>
+
+        <div style={{
+          borderTop: "1px solid #eee",
+          paddingTop: "18px",
+          marginBottom: "18px"
+        }}>
+          <p style={{ margin: "6px 0" }}><b>Akad:</b> 10.00 WIB</p>
+          <p style={{ margin: "6px 0" }}><b>Resepsi:</b> 13.00 WIB</p>
+          <p style={{ margin: "6px 0" }}><b>Lokasi:</b> Akan diisi</p>
+        </div>
+
+        <p style={{
+          fontStyle: "italic",
+          fontSize: "13px",
+          opacity: 0.7
+        }}>
+          Merupakan kehormatan bagi kami atas kehadiran Anda.
+        </p>
+
+      </div>
+    </main>
+  )
+}
