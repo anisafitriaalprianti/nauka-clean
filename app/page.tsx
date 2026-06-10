@@ -24,12 +24,12 @@ export default function Home() {
         }}
       >
 
-        {/* LOGO */}
+        {/* LOGO (AMAN, TANPA EFFECT) */}
         <img
           src="/logo.png"
           alt="Nauka Logo"
           style={{
-            width: "220px",
+            width: "200px",
             height: "auto",
             display: "block",
           }}
@@ -41,7 +41,7 @@ export default function Home() {
             fontSize: "22px",
             fontWeight: 500,
             lineHeight: "1.5",
-            margin: "10px 0 0 0",
+            margin: "12px 0 0 0",
           }}
         >
           Sebuah ruang kecil untuk mengantar momen
@@ -54,29 +54,3 @@ export default function Home() {
             lineHeight: "1.7",
             opacity: 0.75,
             margin: "14px 0 0 0",
-            maxWidth: "300px",
-          }}
-        >
-          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-        </p>
-
-        {/* BUTTON */}
-        <button
-          style={{
-            marginTop: "22px",
-            padding: "12px 24px",
-            borderRadius: "16px",
-            border: "1px solid rgba(44,42,40,0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
-
-      </div>
-    </main>
-  );
-}
