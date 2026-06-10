@@ -16,42 +16,36 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* HERO CONTENT (CENTER TRUE BALANCE AREA) */}
+      {/* CENTER CORE (TRUE BALANCE ZONE) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "360px",
-          marginBottom: "48px",
         }}
       >
-        {/* LOGO */}
-        <div style={{ marginBottom: "28px" }}>
-          <img
-            src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
-            alt="Nauka Logo"
-            style={{
-              width: "220px",
-              height: "auto",
-            }}
-          />
-        </div>
+        <img
+          src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
+          alt="Nauka Logo"
+          style={{
+            width: "220px",
+            height: "auto",
+            marginBottom: "28px",
+          }}
+        />
 
-        {/* HEADLINE */}
         <h1
           style={{
             fontSize: "32px",
             fontWeight: 500,
             lineHeight: "1.3",
-            letterSpacing: "-0.5px",
             margin: 0,
           }}
         >
           Sebuah ruang kecil untuk mengantar momen
         </h1>
 
-        {/* SUBTEXT */}
         <p
           style={{
             marginTop: "18px",
@@ -64,20 +58,27 @@ export default function Home() {
         </p>
       </div>
 
-      {/* CTA (SEPARATE WEIGHT — NOT PART OF CENTER BLOCK) */}
-      <button
+      {/* FLOATING CTA (NOT PART OF CENTER WEIGHT) */}
+      <div
         style={{
-          padding: "12px 22px",
-          borderRadius: "14px",
-          border: "none",
-          background: "#2C2A28",
-          color: "#FAF7F2",
-          cursor: "pointer",
-          fontSize: "14px",
+          position: "absolute",
+          bottom: "64px",
         }}
       >
-        Mulai
-      </button>
+        <button
+          style={{
+            padding: "12px 22px",
+            borderRadius: "14px",
+            border: "none",
+            background: "#2C2A28",
+            color: "#FAF7F2",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Mulai
+        </button>
+      </div>
     </main>
   );
 }
