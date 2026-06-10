@@ -15,15 +15,14 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔳 1 KESATUAN UTUH HERO BLOCK */}
+      {/* 1 KESATUAN HERO */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
           maxWidth: "380px",
-          gap: "18px", // overall rhythm
+          gap: "18px",
         }}
       >
         {/* LOGO */}
@@ -33,11 +32,13 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "6px", // 🔥 dipersempit biar nempel ke headline
+
+            // 🔥 INI YANG KITA FIX
+            marginBottom: "10px", // sedikit lebih rapat ke headline
           }}
         />
 
-        {/* HEADLINE */}
+        {/* HEADLINE (TIDAK DIUBAH SAMA SEKALI) */}
         <h1
           style={{
             fontSize: "40px",
