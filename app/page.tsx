@@ -13,7 +13,6 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
-        overflow: "hidden",
       }}
     >
       <div
@@ -22,56 +21,65 @@ export default function Home() {
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-
-          // 🔥 INI FIX BESAR SESUAI “5 CM KE ATAS”
-          transform: "translateY(-200px)",
         }}
       >
-        {/* LOGO */}
+        {/* 🌙 LOGO (dibuat lebih “soft presence”) */}
         <img
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
-            width: "250px",
+            width: "240px",
             height: "auto",
-            marginBottom: "8px",
+            opacity: 0.95,
+            marginBottom: "6px",
           }}
         />
 
-        {/* HEADLINE */}
+        {/* 🌙 VISUAL BRIDGE (INI KUNCI DREAMY FEEL) */}
+        <div
+          style={{
+            width: "40px",
+            height: "1px",
+            background: "rgba(44,42,40,0.25)",
+            margin: "6px 0 10px 0",
+          }}
+        />
+
+        {/* 🌙 HEADLINE */}
         <h1
           style={{
             fontSize: "24px",
             fontWeight: 500,
-            lineHeight: "1.4",
+            lineHeight: "1.5",
             margin: 0,
+            letterSpacing: "-0.2px",
           }}
         >
           Sebuah ruang kecil untuk mengantar momen
         </h1>
 
-        {/* SUBTEXT */}
+        {/* 🌙 SUBTEXT */}
         <p
           style={{
             fontSize: "13.5px",
-            lineHeight: "1.6",
+            lineHeight: "1.7",
             opacity: 0.75,
-            margin: "16px 0 0 0",
-            maxWidth: "320px",
+            margin: "14px 0 0 0",
+            maxWidth: "300px",
           }}
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* BUTTON */}
+        {/* 🌙 BUTTON (dibuat lebih “calm”, bukan bold banget) */}
         <button
           style={{
             marginTop: "20px",
             padding: "12px 22px",
             borderRadius: "14px",
-            border: "none",
-            background: "#2C2A28",
-            color: "#FAF7F2",
+            border: "1px solid rgba(44,42,40,0.25)",
+            background: "transparent",
+            color: "#2C2A28",
             cursor: "pointer",
             fontSize: "14px",
           }}
