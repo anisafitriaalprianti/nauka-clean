@@ -1,32 +1,90 @@
-<div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  }}
->
-  <img
-    src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
-    alt="Nauka Logo"
-    style={{
-      width: "240px",
-      height: "auto",
-      opacity: 0.95,
-      display: "block",
-    }}
-  />
+'use client';
 
-  <h1
-    style={{
-      fontSize: "22px",
-      fontWeight: 500,
-      lineHeight: "1.5",
-      margin: 0,
+export default function Home() {
+  return (
+    <main
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
+        color: "#2C2A28",
+        fontFamily: "serif",
+        textAlign: "center",
+        padding: "24px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          maxWidth: "380px",
+        }}
+      >
 
-      // 🔥 INI KUNCI REAL FIX
-      marginTop: "-18px",
-    }}
-  >
-    Sebuah ruang kecil untuk mengantar momen
-  </h1>
-</div>
+        {/* HERO CORE */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "2px",
+          }}
+        >
+          <img
+            src="/logo.png"
+            alt="Nauka Logo"
+            style={{
+              width: "240px",
+              height: "auto",
+              display: "block",
+            }}
+          />
+
+          <h1
+            style={{
+              fontSize: "22px",
+              fontWeight: 500,
+              lineHeight: "1.5",
+              margin: 0,
+            }}
+          >
+            Sebuah ruang kecil untuk mengantar momen
+          </h1>
+        </div>
+
+        {/* SUBTEXT */}
+        <p
+          style={{
+            fontSize: "13.5px",
+            lineHeight: "1.7",
+            opacity: 0.75,
+            margin: "14px 0 0 0",
+            maxWidth: "300px",
+          }}
+        >
+          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+        </p>
+
+        {/* BUTTON */}
+        <button
+          style={{
+            marginTop: "22px",
+            padding: "12px 24px",
+            borderRadius: "16px",
+            border: "1px solid rgba(44,42,40,0.25)",
+            background: "transparent",
+            color: "#2C2A28",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Mulai
+        </button>
+
+      </div>
+    </main>
+  );
+}
