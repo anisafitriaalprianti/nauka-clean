@@ -15,32 +15,30 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔥 1 UNIT KESATUAN */}
+      {/* 1 KESATUAN */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-
-          // 🔥 INI YANG JADI KUNCI “SEIMBANG”
           gap: "14px",
         }}
       >
 
-        {/* LOGO + HEADLINE (UNIT 1) */}
+        {/* LOGO + HEADLINE BLOCK */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "6px",
+            gap: "8px",
           }}
         >
           <img
             src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
             alt="Nauka Logo"
             style={{
-              width: "120px",
+              width: "190px", // 🔥 DIPERBESAR
               height: "auto",
               display: "block",
               opacity: 0.95,
@@ -49,7 +47,7 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "19px",
+              fontSize: "20px",
               fontWeight: 500,
               lineHeight: "1.25",
               margin: 0,
@@ -59,7 +57,7 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* SUBTEXT (UNIT 2) */}
+        {/* SUBTEXT */}
         <p
           style={{
             fontSize: "13.5px",
@@ -72,7 +70,7 @@ export default function Home() {
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* BUTTON (UNIT 3) */}
+        {/* BUTTON */}
         <button
           style={{
             padding: "12px 24px",
