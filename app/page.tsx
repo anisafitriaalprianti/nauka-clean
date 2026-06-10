@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main
       style={{
-        minHeight: "100vh",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -13,9 +13,10 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
+        overflow: "hidden",
       }}
     >
-      {/* HERO WRAPPER (NAIK LEBIH JELAS) */}
+      {/* HERO BLOCK (NAIK JELAS, BUKAN SEDIKIT LAGI) */}
       <div
         style={{
           display: "flex",
@@ -23,8 +24,8 @@ export default function Home() {
           alignItems: "center",
           maxWidth: "380px",
 
-          // 🔥 NAIK LEBIH TERASA
-          transform: "translateY(-40px)",
+          // 🔥 INI YANG KAMU MAU: NAIK SIGNIFIKAN
+          transform: "translateY(-80px)",
         }}
       >
         {/* LOGO */}
@@ -34,7 +35,7 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "10px",
+            marginBottom: "6px",
           }}
         />
 
@@ -57,7 +58,7 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: "18px 0 0 0",
+            margin: "14px 0 0 0",
             maxWidth: "320px",
           }}
         >
@@ -67,7 +68,7 @@ export default function Home() {
         {/* CTA */}
         <button
           style={{
-            marginTop: "22px",
+            marginTop: "18px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
