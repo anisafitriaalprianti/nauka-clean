@@ -15,26 +15,24 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* CENTER WRAPPER (OPTICAL BALANCE FIX) */}
+      {/* WRAPPER */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "360px",
-
-          // 🔥 INI KUNCINYA BIAR TIDAK BERAT KE BAWAH
-          transform: "translateY(-2%)",
         }}
       >
         {/* LOGO */}
-        <div style={{ marginBottom: "28px" }}>
+        <div style={{ marginBottom: "32px" }}>
           <img
-            src="https://i.ibb.co/k2PgCXBb/1001653701-removebg-preview.png"
+            src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
             alt="Nauka Logo"
             style={{
-              width: "200px",
+              width: "220px",
               height: "auto",
+              opacity: 0.95,
             }}
           />
         </div>
