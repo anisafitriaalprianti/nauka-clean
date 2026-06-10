@@ -1,4 +1,4 @@
-            'use client';
+'use client';
 
 export default function Home() {
   return (
@@ -7,27 +7,21 @@ export default function Home() {
         minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
-
-        // 🔥 lebih naik lagi dari sebelumnya
-        alignItems: "flex-start",
-        paddingTop: "4vh",
+        alignItems: "center",
 
         background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
         color: "#2C2A28",
         fontFamily: "serif",
         textAlign: "center",
-        paddingLeft: "24px",
-        paddingRight: "24px",
+        padding: "24px",
       }}
     >
+      {/* 🔥 1 UNIT VISUAL (INI KUNCI SEBENARNYA) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-
-          // 🔥 ini yang bikin semua “nempel jadi satu rasa”
-          gap: "2px",
         }}
       >
 
@@ -42,18 +36,18 @@ export default function Home() {
           }}
         />
 
-        {/* 🔥 GROUP TEKS + BUTTON (ditarik lebih dekat ke logo) */}
+        {/* TEXT GROUP (DISET SEBAGAI SATU BLOK) */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
 
-            // INI KUNCI UTAMA
-            marginTop: "0px",
+            // 🔥 INI YANG NGURANGIN “RASA JAUH”
+            marginTop: "4px",
+            gap: "6px",
           }}
         >
-
           <h1
             style={{
               fontSize: "20px",
@@ -70,7 +64,7 @@ export default function Home() {
               fontSize: "13.5px",
               lineHeight: "1.6",
               opacity: 0.75,
-              margin: "4px 0 0 0",
+              margin: 0,
               maxWidth: "300px",
             }}
           >
@@ -79,7 +73,7 @@ export default function Home() {
 
           <button
             style={{
-              marginTop: "10px",
+              marginTop: "8px",
               padding: "12px 24px",
               borderRadius: "16px",
               border: "1px solid rgba(44,42,40,0.25)",
@@ -91,7 +85,6 @@ export default function Home() {
           >
             Mulai
           </button>
-
         </div>
 
       </div>
