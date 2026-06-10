@@ -17,7 +17,7 @@ export default function Home() {
       }}
     >
       {/* LOGO */}
-      <div style={{ marginBottom: "48px" }}>
+      <div style={{ marginBottom: "32px" }}>
         <img
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
@@ -45,7 +45,7 @@ export default function Home() {
       {/* SUBTEXT */}
       <p
         style={{
-          marginTop: "24px",
+          marginTop: "18px",
           maxWidth: "320px",
           fontSize: "14px",
           lineHeight: "1.6",
@@ -58,7 +58,7 @@ export default function Home() {
       {/* CTA */}
       <button
         style={{
-          marginTop: "48px",
+          marginTop: "36px",
           padding: "12px 22px",
           borderRadius: "14px",
           border: "none",
