@@ -15,7 +15,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* HERO WRAPPER */}
+      {/* HERO WRAPPER (NAIK LEBIH JELAS) */}
       <div
         style={{
           display: "flex",
@@ -23,8 +23,8 @@ export default function Home() {
           alignItems: "center",
           maxWidth: "380px",
 
-          // 🔥 INI KUNCINYA
-          transform: "translateY(-18px)", // angkat 1 blok ke atas
+          // 🔥 NAIK LEBIH TERASA
+          transform: "translateY(-40px)",
         }}
       >
         {/* LOGO */}
