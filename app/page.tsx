@@ -15,18 +15,15 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔳 1 BLOK UTUH (SEMUA ELEMENT NYATU SECARA VISUAL & EMOSI) */}
+      {/* 🔳 1 KESATUAN UTUH HERO BLOCK */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-
-          // INI KUNCI “SEIMBANG”
           justifyContent: "center",
-          gap: "20px",
-
           maxWidth: "380px",
+          gap: "18px", // overall rhythm
         }}
       >
         {/* LOGO */}
@@ -36,6 +33,7 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
+            marginBottom: "6px", // 🔥 dipersempit biar nempel ke headline
           }}
         />
 
@@ -65,10 +63,10 @@ export default function Home() {
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* CTA (MASIH BAGIAN DARI BLOK UTAMA, BUKAN TERPISAH) */}
+        {/* CTA */}
         <button
           style={{
-            marginTop: "6px",
+            marginTop: "8px",
             padding: "14px 28px",
             borderRadius: "999px",
             border: "1px solid rgba(44, 42, 40, 0.22)",
