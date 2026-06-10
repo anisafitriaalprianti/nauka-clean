@@ -16,7 +16,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* CORE CONTENT */}
+      {/* CORE */}
       <div
         style={{
           display: "flex",
@@ -30,10 +30,55 @@ export default function Home() {
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
-            width: "230px",
+            width: "240px",
             height: "auto",
             marginBottom: "28px",
           }}
         />
 
-        {/* HEADLINE
+        {/* HEADLINE */}
+        <h1
+          style={{
+            fontSize: "38px",
+            fontWeight: 600,
+            lineHeight: "1.25",
+            letterSpacing: "-0.6px",
+            margin: 0,
+          }}
+        >
+          Sebuah ruang kecil untuk mengantar momen
+        </h1>
+
+        {/* SUBTEXT */}
+        <p
+          style={{
+            marginTop: "20px",
+            fontSize: "16px",
+            lineHeight: "1.7",
+            opacity: 0.78,
+          }}
+        >
+          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+        </p>
+      </div>
+
+      {/* CTA (dibuat lebih “dekat & ramah”) */}
+      <div style={{ marginTop: "42px" }}>
+        <button
+          style={{
+            padding: "14px 28px",
+            borderRadius: "999px",
+            border: "1px solid rgba(44, 42, 40, 0.35)",
+            background: "rgba(44, 42, 40, 0.10)",
+            color: "#2C2A28",
+            cursor: "pointer",
+            fontSize: "15px",
+            fontWeight: 500,
+          }}
+        >
+          Mulai perjalanan
+        </button>
+      </div>
+    </main>
+  );
+}
