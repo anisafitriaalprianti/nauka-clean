@@ -15,55 +15,63 @@ export default function Undangan() {
         maxWidth: "420px",
         width: "100%",
         background: "#fff",
-        padding: "32px",
-        borderRadius: "20px",
-        boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-        textAlign: "center"
+        padding: "36px",
+        borderRadius: "22px",
+        boxShadow: "0 12px 35px rgba(0,0,0,0.08)",
+        textAlign: "center",
+        animation: "fadeIn 0.8s ease"
       }}>
 
+        {/* animasi */}
+        <style>{`
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+        `}</style>
+
+        {/* header kecil */}
         <p style={{
           fontSize: "12px",
-          letterSpacing: "4px",
+          letterSpacing: "5px",
           opacity: 0.6,
-          marginBottom: "10px"
+          marginBottom: "12px"
         }}>
-          THE INVITATION
+          THE WEDDING INVITATION
         </p>
 
+        {/* judul */}
         <h1 style={{
           fontSize: "30px",
           letterSpacing: "3px",
-          marginBottom: "16px"
+          marginBottom: "18px"
         }}>
           UNDANGAN NAUKA
         </h1>
 
+        {/* teks utama */}
         <p style={{
           fontSize: "14px",
-          lineHeight: "1.8",
+          lineHeight: "1.9",
           opacity: 0.85,
-          marginBottom: "24px"
+          marginBottom: "26px"
         }}>
           Dengan penuh rasa syukur, kami mengundang kehadiran Anda
           dalam momen yang insyaAllah penuh keberkahan.
         </p>
 
+        {/* detail acara */}
         <div style={{
           borderTop: "1px solid #eee",
-          paddingTop: "16px",
-          marginBottom: "16px"
+          paddingTop: "18px",
+          marginBottom: "18px"
         }}>
-          <p style={{ margin: "6px 0" }}>
-            <b>Akad:</b> 10.00 WIB
-          </p>
-          <p style={{ margin: "6px 0" }}>
-            <b>Resepsi:</b> 13.00 WIB
-          </p>
-          <p style={{ margin: "6px 0" }}>
-            <b>Lokasi:</b> Akan diisi
-          </p>
+          <p style={{ margin: "6px 0" }}><b>Akad:</b> 10.00 WIB</p>
+          <p style={{ margin: "6px 0" }}><b>Resepsi:</b> 13.00 WIB</p>
+          <p style={{ margin: "6px 0" }}><b>Lokasi:</b> Akan diisi</p>
         </div>
 
+        {/* penutup */}
         <p style={{
           fontStyle: "italic",
           fontSize: "13px",
