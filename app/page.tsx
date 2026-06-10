@@ -23,14 +23,16 @@ export default function Home() {
           maxWidth: "380px",
         }}
       >
-        {/* LOGO (lebih nempel lagi) */}
+        {/* LOGO */}
         <img
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "0px", // 🔥 hampir nempel
+
+            // 🔥 kunci: bukan jarak, tapi “naikkan rasa nyatu”
+            marginBottom: "-6px",
           }}
         />
 
