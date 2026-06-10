@@ -21,62 +21,12 @@ export default function Home() {
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
+
+          // 🔥 BIAR VISUAL LEBIH TIGHT
+          gap: "4px",
         }}
       >
 
         {/* LOGO */}
         <img
-          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
-          alt="Nauka Logo"
-          style={{
-            width: "200px",
-            height: "auto",
-            display: "block",
-          }}
-        />
-
-        {/* HEADLINE (jarak sudah diperkecil di sini) */}
-        <h1
-          style={{
-            fontSize: "22px",
-            fontWeight: 500,
-            lineHeight: "1.5",
-            margin: "6px 0 0 0",
-          }}
-        >
-          Sebuah ruang kecil untuk mengantar momen
-        </h1>
-
-        {/* SUBTEXT */}
-        <p
-          style={{
-            fontSize: "13.5px",
-            lineHeight: "1.7",
-            opacity: 0.75,
-            margin: "12px 0 0 0",
-            maxWidth: "300px",
-          }}
-        >
-          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-        </p>
-
-        {/* BUTTON */}
-        <button
-          style={{
-            marginTop: "20px",
-            padding: "12px 24px",
-            borderRadius: "16px",
-            border: "1px solid rgba(44,42,40,0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
-
-      </div>
-    </main>
-  );
-}
+          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab
