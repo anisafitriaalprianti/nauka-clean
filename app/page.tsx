@@ -3,7 +3,6 @@
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: "0px",
   }}
 >
   <img
@@ -13,8 +12,6 @@
       width: "240px",
       height: "auto",
       opacity: 0.95,
-
-      // 🔥 ini kunci utama
       display: "block",
     }}
   />
@@ -26,8 +23,8 @@
       lineHeight: "1.5",
       margin: 0,
 
-      // 🔥 tarik naik ke logo (optical fix)
-      transform: "translateY(-10px)",
+      // 🔥 INI KUNCI REAL FIX
+      marginTop: "-18px",
     }}
   >
     Sebuah ruang kecil untuk mengantar momen
