@@ -1,94 +1,84 @@
 'use client';
 
-export default function Home() {
+import { motion } from 'framer-motion';
+
+export default function Hero() {
   return (
     <main
       style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
-        color: "#2C2A28",
-        fontFamily: "serif",
-        textAlign: "center",
-        padding: "24px",
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#FAF9F7',
+        padding: '0 20px',
       }}
     >
-      {/* 🔥 NARROW IDENTITY COLUMN (BIAR TIDAK TERASA “TERPISAH”) */}
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          maxWidth: "320px",
-
-          // penting: bukan gap besar, tapi rhythm kecil
-          gap: "10px",
+          textAlign: 'center',
+          maxWidth: 420,
         }}
       >
-
-        {/* 🔥 LOGO DIPERLAKUKAN SEBAGAI MARK (BUKAN HEADER) */}
-        <img
-          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
-          alt="Nauka Logo"
+        {/* LOGO */}
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           style={{
-            width: "160px", // 🔥 diturunkan agar tidak “berkuasa sendiri”
-            height: "auto",
-            display: "block",
-            opacity: 0.92,
+            fontSize: 16,
+            letterSpacing: 2,
+            color: '#2C2A28',
+            marginBottom: 12,
+          }}
+        >
+          NAUKA
+        </motion.div>
+
+        {/* CONNECTOR LINE */}
+        <motion.div
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: 72, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          style={{
+            height: 1,
+            background: 'rgba(44, 42, 40, 0.10)',
+            margin: '0 auto 18px auto',
           }}
         />
 
-        {/* 🔥 TYPOGRAPHY BLOCK (INI YANG JADI FOKUS UTAMA) */}
-        <div
+        {/* HEADLINE */}
+        <motion.h1
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "6px",
+            fontSize: 28,
+            fontWeight: 500,
+            letterSpacing: -0.2,
+            color: '#2C2A28',
+            marginBottom: 10,
+            lineHeight: 1.3,
           }}
         >
-          <h1
-            style={{
-              fontSize: "19px",
-              fontWeight: 500,
-              lineHeight: "1.25",
-              margin: 0,
-            }}
-          >
-            Sebuah ruang kecil untuk mengantar momen
-          </h1>
+          Sebuah ruang kecil untuk mengantar momen
+        </motion.h1>
 
-          <p
-            style={{
-              fontSize: "13.5px",
-              lineHeight: "1.5",
-              opacity: 0.75,
-              margin: 0,
-            }}
-          >
-            Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-          </p>
-        </div>
+        {/* SUBTEXT */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          style={{
+            fontSize: 14,
+            color: 'rgba(44, 42, 40, 0.65)',
+            lineHeight: 1.6,
+            marginBottom: 24,
+          }}
+        >
+          Undangan digital yang sederhana, tenang, dan penuh makna.
+        </motion.p>
 
         {/* BUTTON */}
-        <button
-          style={{
-            marginTop: "4px",
-            padding: "12px 24px",
-            borderRadius: "16px",
-            border: "1px solid rgba(44,42,40,0.25)",
-            background: "transparent",
-            color: "#2C2A28",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
-
-      </div>
-    </main>
-  );
-}
+        <motion.button
+          initial
