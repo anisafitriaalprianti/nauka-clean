@@ -98,3 +98,19 @@ export default function Home() {
         <button
           style={{
             marginTop: "16px",
+            padding: "12px 24px",
+            borderRadius: "16px",
+            border: "1px solid rgba(44,42,40,0.25)",
+            background: "transparent",
+            color: "#2C2A28",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Mulai
+        </button>
+
+      </div>
+    </main>
+  );
+}
