@@ -1,4 +1,5 @@
 'use client';
+console.log("NAUKA UPDATED");
 
 export default function Home() {
   return (
