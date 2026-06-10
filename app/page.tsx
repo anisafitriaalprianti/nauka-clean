@@ -3,9 +3,6 @@
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-
-    // 🔥 INI KUNCI UTAMA
-    transform: "translateY(-10px)",
   }}
 >
   {/* LOGO */}
@@ -16,10 +13,6 @@
       width: "240px",
       height: "auto",
       display: "block",
-
-      // 🔥 bikin logo “lebih padat secara visual”
-      transform: "scale(1.02)",
-      transformOrigin: "center bottom",
     }}
   />
 
@@ -30,9 +23,7 @@
       fontWeight: 500,
       lineHeight: "1.5",
       margin: 0,
-
-      // 🔥 ini yang “nempelkan secara rasa”
-      marginTop: "-12px",
+      marginTop: "8px", // ini jarak NORMAL aja
     }}
   >
     Sebuah ruang kecil untuk mengantar momen
