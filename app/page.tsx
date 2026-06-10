@@ -8,7 +8,6 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-
         background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
         color: "#2C2A28",
         fontFamily: "serif",
@@ -24,27 +23,27 @@ export default function Home() {
         }}
       >
 
-        {/* 🔥 LOGO DITURUNKAN (KUNCI UTAMA) */}
+        {/* 🔥 LOGO DIKASIH “ANCHOR VISUAL” */}
         <img
           src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
           alt="Nauka Logo"
           style={{
-            width: "170px",
-            height: "auto",
-            display: "block",
+            width: "165px",
 
-            // ini yang bikin dia “turun mendekat”
-            marginBottom: "6px",
+            // 🔥 ini yang bikin dia “nempel ke dunia bawah”
+            filter: "drop-shadow(0px 3px 6px rgba(0,0,0,0.10))",
+
+            marginBottom: "4px",
           }}
         />
 
-        {/* TEXT + BUTTON GROUP */}
+        {/* TEXT BLOCK */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "2px",
+            gap: "3px",
           }}
         >
           <h1
@@ -53,6 +52,7 @@ export default function Home() {
               fontWeight: 500,
               lineHeight: "1.25",
               margin: 0,
+              letterSpacing: "0.2px",
             }}
           >
             Sebuah ruang kecil untuk mengantar momen
@@ -72,7 +72,7 @@ export default function Home() {
 
           <button
             style={{
-              marginTop: "4px",
+              marginTop: "6px",
               padding: "12px 24px",
               borderRadius: "16px",
               border: "1px solid rgba(44,42,40,0.25)",
