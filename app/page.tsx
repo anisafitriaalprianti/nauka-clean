@@ -18,6 +18,7 @@ export default function Hero() {
         style={{
           textAlign: 'center',
           maxWidth: 420,
+          width: '100%',
         }}
       >
         {/* LOGO */}
@@ -35,7 +36,7 @@ export default function Hero() {
           NAUKA
         </motion.div>
 
-        {/* CONNECTOR LINE */}
+        {/* CONNECTOR (INI INTI FIX-NYA) */}
         <motion.div
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: 72, opacity: 1 }}
@@ -66,19 +67,4 @@ export default function Hero() {
 
         {/* SUBTEXT */}
         <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          style={{
-            fontSize: 14,
-            color: 'rgba(44, 42, 40, 0.65)',
-            lineHeight: 1.6,
-            marginBottom: 24,
-          }}
-        >
-          Undangan digital yang sederhana, tenang, dan penuh makna.
-        </motion.p>
-
-        {/* BUTTON */}
-        <motion.button
           initial
