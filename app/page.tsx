@@ -30,7 +30,7 @@ export default function Home() {
     }}>
 
      <img
-  src="https://i.ibb.co/B5KQW8ZB/undangan-by-nauka.png"
+  src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
   alt="Nauka Logo"
   style={{
     width: "140px",
