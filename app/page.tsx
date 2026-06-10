@@ -16,7 +16,7 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* 🔥 1 BLOCK UTAMA (CENTER TOTAL) */}
+      {/* HERO WRAPPER */}
       <div
         style={{
           display: "flex",
@@ -36,24 +36,24 @@ export default function Home() {
           }}
         />
 
-        {/* TEXT + BUTTON BLOCK (DIKETATKAN BIAR NYATU) */}
+        {/* TEXT + BUTTON GROUP */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
 
-            // 🔥 INI KUNCI “TIDAK TERASA JAUH”
-            marginTop: "2px",
-            gap: "4px",
+            // 🔥 INI KUNCI UTAMA (dipadatkan)
+            marginTop: "0px",
+            gap: "2px",
           }}
         >
           <h1
             style={{
               fontSize: "20px",
               fontWeight: 500,
-              lineHeight: "1.3",
-              margin: 0,
+              lineHeight: "1.25",
+              margin: "2px 0 0 0",
             }}
           >
             Sebuah ruang kecil untuk mengantar momen
@@ -64,7 +64,7 @@ export default function Home() {
               fontSize: "13.5px",
               lineHeight: "1.5",
               opacity: 0.75,
-              margin: 0,
+              margin: "0",
               maxWidth: "300px",
             }}
           >
@@ -73,7 +73,7 @@ export default function Home() {
 
           <button
             style={{
-              marginTop: "6px",
+              marginTop: "4px",
               padding: "12px 24px",
               borderRadius: "16px",
               border: "1px solid rgba(44,42,40,0.25)",
