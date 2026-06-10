@@ -13,44 +13,47 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
-        overflow: "hidden",
       }}
     >
-      {/* HERO BLOCK (NAIK JELAS, BUKAN SEDIKIT LAGI) */}
+      {/* HERO WRAPPER (dibikin lebih “ketarik ke atas center feel”) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-
-          // 🔥 INI YANG KAMU MAU: NAIK SIGNIFIKAN
-          transform: "translateY(-80px)",
+          transform: "translateY(-12px)", // 🔥 kecil tapi ngunci center
         }}
       >
-        {/* LOGO */}
-        <img
-          src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
-          alt="Nauka Logo"
+        {/* LOGO + HEADLINE = 1 UNIT VISUAL */}
+        <div
           style={{
-            width: "250px",
-            height: "auto",
-            marginBottom: "6px",
-          }}
-        />
-
-        {/* HEADLINE */}
-        <h1
-          style={{
-            fontSize: "24px",
-            fontWeight: 500,
-            lineHeight: "1.4",
-            letterSpacing: "-0.2px",
-            margin: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "4px", // 🔥 ini yang bikin “nyatu”
           }}
         >
-          Sebuah ruang kecil untuk mengantar momen
-        </h1>
+          <img
+            src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
+            alt="Nauka Logo"
+            style={{
+              width: "250px",
+              height: "auto",
+            }}
+          />
+
+          <h1
+            style={{
+              fontSize: "24px",
+              fontWeight: 500,
+              lineHeight: "1.4",
+              margin: 0,
+            }}
+          >
+            Sebuah ruang kecil untuk mengantar momen
+          </h1>
+        </div>
 
         {/* SUBTEXT */}
         <p
@@ -58,7 +61,7 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: "14px 0 0 0",
+            margin: "16px 0 0 0",
             maxWidth: "320px",
           }}
         >
@@ -68,7 +71,7 @@ export default function Home() {
         {/* CTA */}
         <button
           style={{
-            marginTop: "18px",
+            marginTop: "20px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
