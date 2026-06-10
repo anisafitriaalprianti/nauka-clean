@@ -23,25 +23,24 @@ export default function Home() {
           maxWidth: "380px",
         }}
       >
-        {/* LOGO */}
+        {/* LOGO (lebih nempel lagi) */}
         <img
           src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
           alt="Nauka Logo"
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "6px",
-            transform: "translateY(-2px)", // tetap sedikit “nempel”
+            marginBottom: "0px", // 🔥 hampir nempel
           }}
         />
 
-        {/* HEADLINE (DIKECILIN SESUAI REQUEST) */}
+        {/* HEADLINE */}
         <h1
           style={{
-            fontSize: "28px", // 🔥 ini yang kamu minta dikecilin
+            fontSize: "24px",
             fontWeight: 500,
-            lineHeight: "1.35",
-            letterSpacing: "-0.3px",
+            lineHeight: "1.4",
+            letterSpacing: "-0.2px",
             margin: 0,
           }}
         >
@@ -54,17 +53,17 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: "22px 0 0 0",
+            margin: "18px 0 0 0",
             maxWidth: "320px",
           }}
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* CTA (TETAP FAVORIT KAMU) */}
+        {/* CTA */}
         <button
           style={{
-            marginTop: "26px",
+            marginTop: "22px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
