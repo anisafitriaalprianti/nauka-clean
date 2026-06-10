@@ -13,17 +13,28 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
-
-        // 🔥 FIX UTAMA: naikkan optical center
-        transform: "translateY(-3%)",
+        position: "relative",
       }}
     >
+      {/* 🔥 VISUAL ANCHOR (INI YANG BIKIN ATAS GAK KOSONG LAGI) */}
+      <div
+        style={{
+          position: "absolute",
+          top: "18%",
+          width: "120px",
+          height: "1px",
+          background: "rgba(44, 42, 40, 0.08)",
+        }}
+      />
+
+      {/* HERO CORE */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
+          transform: "translateY(-1%)",
         }}
       >
         {/* LOGO */}
