@@ -13,6 +13,7 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
+        overflow: "hidden",
       }}
     >
       <div
@@ -21,9 +22,9 @@ export default function Home() {
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "380px",
-          
-          // 🔥 INI KUNCI: semua isi bawah dinaikkan sedikit
-          transform: "translateY(-30px)",
+
+          // 🔥 NAIK BESAR SEKALIAN (BUKAN SEDIKIT LAGI)
+          transform: "translateY(-70px)",
         }}
       >
         {/* LOGO */}
@@ -33,7 +34,7 @@ export default function Home() {
           style={{
             width: "250px",
             height: "auto",
-            marginBottom: "10px",
+            marginBottom: "8px",
           }}
         />
 
@@ -55,7 +56,7 @@ export default function Home() {
             fontSize: "13.5px",
             lineHeight: "1.6",
             opacity: 0.75,
-            margin: "18px 0 0 0",
+            margin: "16px 0 0 0",
             maxWidth: "320px",
           }}
         >
@@ -65,7 +66,7 @@ export default function Home() {
         {/* BUTTON */}
         <button
           style={{
-            marginTop: "22px",
+            marginTop: "20px",
             padding: "12px 22px",
             borderRadius: "14px",
             border: "none",
