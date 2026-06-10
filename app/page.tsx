@@ -32,7 +32,7 @@ export default function Home() {
           src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
           alt="Nauka Logo"
           style={{
-            width: "180px",
+            width: "240px",
             height: "auto",
             display: "block",
           }}
