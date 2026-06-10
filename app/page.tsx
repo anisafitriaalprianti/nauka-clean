@@ -1,5 +1,4 @@
 'use client';
-console.log("NAUKA UPDATED");
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* OUTER WRAPPER */}
       <div
         style={{
           display: "flex",
@@ -25,73 +23,70 @@ export default function Home() {
           maxWidth: "380px",
         }}
       >
-        
-        {/* 🪶 HERO CORE (INI KUNCI UTAMA) */}
+
+        {/* 🪶 HERO CORE */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "6px",
+            gap: "8px",
           }}
         >
           <img
             src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
             alt="Nauka Logo"
             style={{
-              width: "250px",
+              width: "240px",
               height: "auto",
+              opacity: 0.95,
             }}
           />
 
           <h1
             style={{
-              fontSize: "24px",
+              fontSize: "22px",
               fontWeight: 500,
-              lineHeight: "1.4",
+              lineHeight: "1.5",
               margin: 0,
+              letterSpacing: "-0.2px",
             }}
           >
             Sebuah ruang kecil untuk mengantar momen
           </h1>
         </div>
 
-        {/* 🪶 SUPPORT LAYER */}
-        <div
+        {/* 🪶 SUPPORT */}
+        <p
           style={{
-            marginTop: "14px",
+            fontSize: "13.5px",
+            lineHeight: "1.7",
+            opacity: 0.75,
+            margin: "14px 0 0 0",
             maxWidth: "300px",
           }}
         >
-          <p
-            style={{
-              fontSize: "13.5px",
-              lineHeight: "1.7",
-              opacity: 0.75,
-              margin: 0,
-            }}
-          >
-            Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-          </p>
-        </div>
+          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+        </p>
 
-        {/* 🪶 ACTION LAYER */}
-        <div style={{ marginTop: "22px" }}>
-          <button
-            style={{
-              padding: "12px 22px",
-              borderRadius: "14px",
-              border: "1px solid rgba(44,42,40,0.25)",
-              background: "transparent",
-              color: "#2C2A28",
-              cursor: "pointer",
-              fontSize: "14px",
-            }}
-          >
-            Mulai
-          </button>
-        </div>
+        {/* 🪶 ACTION */}
+        <button
+          style={{
+            marginTop: "22px",
+            padding: "12px 24px",
+            borderRadius: "16px",
+            border: "1px solid rgba(44,42,40,0.25)",
+            background: "transparent",
+            color: "#2C2A28",
+            cursor: "pointer",
+            fontSize: "14px",
 
+            // 🔥 subtle “soft luxury feel”
+            backdropFilter: "blur(2px)",
+          }}
+        >
+          Mulai
+        </button>
       </div>
     </main>
   );
