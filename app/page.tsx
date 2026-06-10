@@ -4,91 +4,88 @@ export default function Home() {
   return (
     <main
       style={{
-        minHeight: "100vh",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-
         background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
         color: "#2C2A28",
         fontFamily: "serif",
         textAlign: "center",
-
-        // 🔥 INI KUNCI UTAMA (ngurangin “ruang kosong besar”)
-        padding: "0 24px",
+        padding: "24px",
       }}
     >
-      {/* 🔥 HERO DIPERKECIL “RUANGNYA” */}
+      {/* 🔥 1 UNIT KESATUAN */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
 
-          // 🔥 INI YANG NGUBAH FEEL BESAR
-          transform: "translateY(-20px)",
+          // 🔥 INI YANG JADI KUNCI “SEIMBANG”
+          gap: "14px",
         }}
       >
 
-        {/* LOGO */}
-        <img
-          src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
-          alt="Nauka Logo"
-          style={{
-            width: "150px",
-            height: "auto",
-            display: "block",
-          }}
-        />
-
-        {/* TEXT BLOCK (DIJADIIN SATU UNIT KETAT) */}
+        {/* LOGO + HEADLINE (UNIT 1) */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "4px",
-            marginTop: "4px",
+            gap: "6px",
           }}
         >
+          <img
+            src="https://i.postimg.cc/yN1cmGR9/file-00000000aa1471fab057b72e1ac28d6b.png"
+            alt="Nauka Logo"
+            style={{
+              width: "120px",
+              height: "auto",
+              display: "block",
+              opacity: 0.95,
+            }}
+          />
+
           <h1
             style={{
-              fontSize: "20px",
+              fontSize: "19px",
               fontWeight: 500,
-              lineHeight: "1.2",
+              lineHeight: "1.25",
               margin: 0,
             }}
           >
             Sebuah ruang kecil untuk mengantar momen
           </h1>
-
-          <p
-            style={{
-              fontSize: "13.5px",
-              lineHeight: "1.4",
-              opacity: 0.75,
-              margin: 0,
-              maxWidth: "300px",
-            }}
-          >
-            Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
-          </p>
-
-          <button
-            style={{
-              marginTop: "6px",
-              padding: "12px 24px",
-              borderRadius: "16px",
-              border: "1px solid rgba(44,42,40,0.25)",
-              background: "transparent",
-              color: "#2C2A28",
-              cursor: "pointer",
-              fontSize: "14px",
-            }}
-          >
-            Mulai
-          </button>
         </div>
+
+        {/* SUBTEXT (UNIT 2) */}
+        <p
+          style={{
+            fontSize: "13.5px",
+            lineHeight: "1.5",
+            opacity: 0.75,
+            margin: 0,
+            maxWidth: "300px",
+          }}
+        >
+          Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
+        </p>
+
+        {/* BUTTON (UNIT 3) */}
+        <button
+          style={{
+            padding: "12px 24px",
+            borderRadius: "16px",
+            border: "1px solid rgba(44,42,40,0.25)",
+            background: "transparent",
+            color: "#2C2A28",
+            cursor: "pointer",
+            fontSize: "14px",
+          }}
+        >
+          Mulai
+        </button>
 
       </div>
     </main>
