@@ -6,6 +6,7 @@ export default function Home() {
       style={{
         minHeight: "100vh",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
@@ -15,24 +16,24 @@ export default function Home() {
         padding: "24px",
       }}
     >
-      {/* WRAPPER */}
+      {/* HERO CONTENT (CENTER TRUE BALANCE AREA) */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           maxWidth: "360px",
+          marginBottom: "48px",
         }}
       >
         {/* LOGO */}
-        <div style={{ marginBottom: "32px" }}>
+        <div style={{ marginBottom: "28px" }}>
           <img
             src="https://i.ibb.co/k2PgCXBf/1001653701-removebg-preview.png"
             alt="Nauka Logo"
             style={{
               width: "220px",
               height: "auto",
-              opacity: 0.95,
             }}
           />
         </div>
@@ -61,23 +62,22 @@ export default function Home() {
         >
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
-
-        {/* CTA */}
-        <button
-          style={{
-            marginTop: "36px",
-            padding: "12px 22px",
-            borderRadius: "14px",
-            border: "none",
-            background: "#2C2A28",
-            color: "#FAF7F2",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-        >
-          Mulai
-        </button>
       </div>
+
+      {/* CTA (SEPARATE WEIGHT — NOT PART OF CENTER BLOCK) */}
+      <button
+        style={{
+          padding: "12px 22px",
+          borderRadius: "14px",
+          border: "none",
+          background: "#2C2A28",
+          color: "#FAF7F2",
+          cursor: "pointer",
+          fontSize: "14px",
+        }}
+      >
+        Mulai
+      </button>
     </main>
   );
 }
