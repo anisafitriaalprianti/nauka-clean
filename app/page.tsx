@@ -6,7 +6,6 @@ export default function Home() {
       style={{
         minHeight: "100vh",
         display: "flex",
-        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         background: "linear-gradient(180deg, #FAF7F2 0%, #E8DDCF 100%)",
@@ -14,9 +13,11 @@ export default function Home() {
         fontFamily: "serif",
         textAlign: "center",
         padding: "24px",
+
+        // 🔥 FIX UTAMA: naikkan optical center
+        transform: "translateY(-3%)",
       }}
     >
-      {/* HERO CORE */}
       <div
         style={{
           display: "flex",
@@ -62,7 +63,7 @@ export default function Home() {
           Ruang digital yang menjaga momen tetap sederhana, tenang, dan bermakna
         </p>
 
-        {/* CTA (IN FLOW — NOT MUSUHAN, NOT FLOATING) */}
+        {/* CTA */}
         <div style={{ marginTop: "40px" }}>
           <button
             style={{
