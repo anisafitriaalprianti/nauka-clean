@@ -17,10 +17,10 @@ export default function Home() {
         style={{
           ...styles.content,
           opacity: mounted ? 1 : 0,
-          transform: mounted ? 'translateY(0px)' : 'translateY(10px)',
+          transform: mounted ? 'translateY(0px)' : 'translateY(12px)',
         }}
       >
-        {/* LOGO FLOATING */}
+        {/* LOGO ONLY (NO TEXT BRAND) */}
         <div style={styles.logoWrap}>
           <img
             src="/file_00000000aa1471fab057b72e1ac28d6b.png"
@@ -29,16 +29,15 @@ export default function Home() {
           />
         </div>
 
-        {/* BRAND */}
-        <h1 style={styles.title}>NAUKA</h1>
-
         {/* TAGLINE */}
         <p style={styles.subtitle}>
           Sebuah ruang kecil untuk mengantar momen
         </p>
 
         {/* BUTTON */}
-        <button style={styles.button}>Mulai</button>
+        <button style={styles.button}>
+          Buka Undangan
+        </button>
 
         {/* SIGNATURE */}
         <div style={styles.signature}>
@@ -62,15 +61,14 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '24px',
   },
 
-  /* SOFT BREATHING LIGHT */
   glow: {
     position: 'absolute',
     width: '700px',
     height: '700px',
     background:
       'radial-gradient(circle, rgba(255,255,255,0.07), transparent 60%)',
-    top: '-250px',
-    left: '-250px',
+    top: '-260px',
+    left: '-260px',
     filter: 'blur(70px)',
     animation: 'breath 6s ease-in-out infinite',
   },
@@ -85,9 +83,8 @@ const styles: Record<string, React.CSSProperties> = {
     transition: 'all 1.2s ease',
   },
 
-  /* FLOATING LOGO */
   logoWrap: {
-    padding: '24px',
+    padding: '26px',
     borderRadius: '999px',
     background: 'rgba(255,255,255,0.06)',
     border: '1px solid rgba(255,255,255,0.12)',
@@ -103,12 +100,6 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'block',
   },
 
-  title: {
-    fontSize: '34px',
-    letterSpacing: '7px',
-    fontWeight: 300,
-  },
-
   subtitle: {
     fontSize: '14px',
     opacity: 0.7,
@@ -118,7 +109,7 @@ const styles: Record<string, React.CSSProperties> = {
 
   button: {
     marginTop: '14px',
-    padding: '10px 26px',
+    padding: '10px 28px',
     borderRadius: '999px',
     border: '1px solid rgba(255,255,255,0.18)',
     background: 'rgba(255,255,255,0.04)',
@@ -126,7 +117,6 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '13px',
     letterSpacing: '1px',
     cursor: 'pointer',
-    transition: '0.3s ease',
   },
 
   signature: {
@@ -137,7 +127,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
 };
 
-/* inject keyframes */
+/* animations */
 if (typeof window !== 'undefined') {
   const style = document.createElement('style');
   style.innerHTML = `
