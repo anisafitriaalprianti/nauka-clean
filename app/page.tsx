@@ -4,11 +4,38 @@ export default function Page() {
   return (
     <main style={styles.wrapper}>
       <div style={styles.grain} />
+
+      {/* 🌿 CORNER ORNAMENTS */}
+      <div style={{ ...styles.corner, ...styles.topLeft }}>
+        <svg viewBox="0 0 100 100" style={styles.svg}>
+          <path d="M10,90 C40,10 60,10 90,90" />
+        </svg>
+      </div>
+
+      <div style={{ ...styles.corner, ...styles.topRight }}>
+        <svg viewBox="0 0 100 100" style={styles.svg}>
+          <path d="M10,90 C40,10 60,10 90,90" />
+        </svg>
+      </div>
+
+      <div style={{ ...styles.corner, ...styles.bottomLeft }}>
+        <svg viewBox="0 0 100 100" style={styles.svg}>
+          <path d="M10,90 C40,10 60,10 90,90" />
+        </svg>
+      </div>
+
+      <div style={{ ...styles.corner, ...styles.bottomRight }}>
+        <svg viewBox="0 0 100 100" style={styles.svg}>
+          <path d="M10,90 C40,10 60,10 90,90" />
+        </svg>
+      </div>
+
+      {/* FLOATING BLURS */}
       <div style={styles.blob1} />
       <div style={styles.blob2} />
 
+      {/* CONTENT */}
       <div style={styles.content}>
-        {/* LOGO (NO CIRCLE WRAP) */}
         <img
           src="/file_00000000aa1471fab057b72e1ac28d6b.png"
           alt="logo"
@@ -39,26 +66,23 @@ const styles: Record<string, React.CSSProperties> = {
     overflow: 'hidden',
     padding: '24px',
 
-    /* 🌿 GLOBAL CANVAS FIX */
     background: 'linear-gradient(135deg, #FAF7F2, #E8DDCF)',
     color: '#2a2a2a',
   },
 
   content: {
     textAlign: 'center',
-    zIndex: 2,
+    zIndex: 5,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     gap: '14px',
   },
 
-  /* ❌ NO CIRCLE WRAP ANYMORE */
   logo: {
     width: '150px',
     height: '150px',
     objectFit: 'contain',
-    filter: 'contrast(1.05) brightness(1.05)',
   },
 
   subtitle: {
@@ -66,7 +90,6 @@ const styles: Record<string, React.CSSProperties> = {
     opacity: 0.75,
     maxWidth: '280px',
     lineHeight: '1.6',
-    color: '#3a3a3a',
   },
 
   button: {
@@ -74,7 +97,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '10px 28px',
     borderRadius: '999px',
     border: '1px solid rgba(0,0,0,0.15)',
-    background: 'rgba(255,255,255,0.5)',
+    background: 'rgba(255,255,255,0.55)',
     color: '#2a2a2a',
     fontSize: '13px',
     letterSpacing: '1px',
@@ -85,27 +108,26 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: '10px',
     fontSize: '12px',
     opacity: 0.5,
-    color: '#3a3a3a',
   },
 
-  /* 🌫️ PAPER GRAIN */
+  /* 🌫️ GRAIN */
   grain: {
     position: 'absolute',
     inset: 0,
     backgroundImage:
       'url("https://www.transparenttextures.com/patterns/paper-fibers.png")',
-    opacity: 0.25,
+    opacity: 0.2,
     pointerEvents: 'none',
   },
 
-  /* 🌿 FLOATING BLUR SHAPES */
+  /* 🌿 FLOATING BLURS */
   blob1: {
     position: 'absolute',
     width: '400px',
     height: '400px',
     background: 'rgba(255,255,255,0.35)',
-    filter: 'blur(80px)',
-    top: '-100px',
+    filter: 'blur(90px)',
+    top: '-120px',
     left: '-120px',
     borderRadius: '50%',
   },
@@ -115,9 +137,30 @@ const styles: Record<string, React.CSSProperties> = {
     width: '500px',
     height: '500px',
     background: 'rgba(200,180,160,0.25)',
-    filter: 'blur(100px)',
+    filter: 'blur(110px)',
     bottom: '-180px',
     right: '-150px',
     borderRadius: '50%',
+  },
+
+  /* 🌿 CORNER ORNAMENT BASE */
+  corner: {
+    position: 'absolute',
+    width: '120px',
+    height: '120px',
+    opacity: 0.35,
+  },
+
+  topLeft: { top: 0, left: 0 },
+  topRight: { top: 0, right: 0, transform: 'rotate(90deg)' },
+  bottomLeft: { bottom: 0, left: 0, transform: 'rotate(-90deg)' },
+  bottomRight: { bottom: 0, right: 0, transform: 'rotate(180deg)' },
+
+  svg: {
+    width: '100%',
+    height: '100%',
+    stroke: '#6b5b4b',
+    strokeWidth: 1.2,
+    fill: 'none',
   },
 };
