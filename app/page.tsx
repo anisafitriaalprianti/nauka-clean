@@ -4,14 +4,15 @@ export default function Page() {
   return (
     <main style={styles.wrapper}>
       <div style={styles.content}>
-        {/* LOGO (CLEAN VERSION) */}
-        <div style={styles.logoWrap}>
-          <img
-            src="/file_00000000aa1471fab057b72e1ac28d6b.png"
-            alt="NAUKA Logo"
-            style={styles.logo}
-          />
-        </div>
+        {/* LOGO (NEW FILE SAFE PATH) */}
+        <img
+          src="/tak%20berjudul61_20260611085511.png"
+          alt="NAUKA Logo"
+          style={styles.logo}
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+          }}
+        />
 
         {/* TEXT */}
         <p style={styles.subtitle}>
@@ -31,7 +32,7 @@ export default function Page() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  /* 🌿 CLEAN CANVAS */
+  /* 🌿 CLEAN NAUKA CANVAS */
   wrapper: {
     minHeight: '100vh',
     display: 'flex',
@@ -44,7 +45,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '24px',
   },
 
-  /* 🌿 MAIN UNIT (LOGO + TEXT = 1 ENTITY) */
+  /* 🌿 CENTER UNIT (NO GHOST SPACING) */
   content: {
     display: 'flex',
     flexDirection: 'column',
@@ -52,27 +53,17 @@ const styles: Record<string, React.CSSProperties> = {
 
     textAlign: 'center',
 
-    gap: '6px', // 🔥 rapat tapi masih breathable
+    gap: '6px',
     lineHeight: 1,
   },
 
-  /* 🌿 LOGO WRAP (NO GHOST SPACE PROTECTION) */
-  logoWrap: {
-    width: '140px',
-    height: '140px',
-
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  /* 🌿 CLEAN LOGO */
+  /* 🌿 LOGO STABLE */
   logo: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
+    width: '132px',
+    height: '132px',
 
-    display: 'block', // 🔥 penting biar gak ada baseline gap
+    objectFit: 'contain',
+    display: 'block',
   },
 
   subtitle: {
