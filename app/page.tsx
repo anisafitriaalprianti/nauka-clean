@@ -1,92 +1,55 @@
 'use client';
 
-export default function Page() {
+export default function Home() {
   return (
-    <main style={styles.wrapper}>
-      <div style={styles.content}>
-        {/* LOGO - RAW GITHUB (ANTI ERROR) */}
-        <img
-          src="https://raw.githubusercontent.com/anisafitriaalprianti/nauka-clean/main/public/Tak%20berjudul61_20260611085511.png"
-          alt="NAUKA Logo"
-          style={styles.logo}
-        />
+    <main
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#0b0f1a',
+        gap: '18px',
+        padding: '40px',
+        textAlign: 'center',
+      }}
+    >
+      {/* LOGO (SAFE IMG, NO NEXT IMAGE) */}
+      <img
+        src="/file_0000000077687209b2adc5b443052e18.png"
+        alt="NAUKA logo"
+        style={{
+          width: 150,
+          height: 150,
+          objectFit: 'contain',
+          display: 'block',
+        }}
+      />
 
-        {/* TEXT */}
-        <p style={styles.subtitle}>
-          Sebuah ruang kecil untuk mengantar momen
-        </p>
+      {/* BRAND */}
+      <h1
+        style={{
+          fontSize: '28px',
+          fontWeight: 500,
+          color: '#ffffff',
+          letterSpacing: '2px',
+          margin: 0,
+        }}
+      >
+        NAUKA
+      </h1>
 
-        {/* BUTTON */}
-        <button style={styles.button}>Mulai</button>
-
-        {/* SIGNATURE */}
-        <div style={styles.signature}>
-          “tenang, sederhana, bermakna”
-        </div>
-      </div>
+      {/* TAGLINE */}
+      <p
+        style={{
+          fontSize: '14px',
+          color: 'rgba(255,255,255,0.6)',
+          maxWidth: '320px',
+          lineHeight: '1.6',
+          margin: 0,
+        }}
+      >
+        “Sebuah ruang kecil untuk mengantar momen”
+      </p>
     </main>
-  );
-}
-
-const styles: Record<string, React.CSSProperties> = {
-  /* 🌿 BACKGROUND NAUKA */
-  wrapper: {
-    minHeight: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-
-    background: 'linear-gradient(135deg, #FAF7F2, #E8DDCF)',
-    color: '#2a2a2a',
-
-    padding: '24px',
-  },
-
-  /* 🌿 CENTER UNIT */
-  content: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-
-    textAlign: 'center',
-
-    gap: '6px',
-    lineHeight: 1,
-  },
-
-  /* 🌿 LOGO */
-  logo: {
-    width: '132px',
-    height: '132px',
-    objectFit: 'contain',
-    display: 'block',
-  },
-
-  subtitle: {
-    margin: 0,
-    fontSize: '14px',
-    opacity: 0.75,
-    maxWidth: '280px',
-    lineHeight: '1.6',
-  },
-
-  button: {
-    marginTop: '8px',
-    padding: '10px 28px',
-    borderRadius: '999px',
-
-    border: '1px solid rgba(0,0,0,0.15)',
-    background: 'transparent',
-
-    color: '#2a2a2a',
-    fontSize: '13px',
-    letterSpacing: '1px',
-    cursor: 'pointer',
-  },
-
-  signature: {
-    marginTop: '6px',
-    fontSize: '12px',
-    opacity: 0.5,
-  },
-};
