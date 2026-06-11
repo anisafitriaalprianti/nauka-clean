@@ -1,12 +1,8 @@
 export default function Home() {
   return (
-    <div>
-      <h1 style={{ color: 'red', fontSize: 40 }}>
-        TEST NAUKA PAGE AKTIF
-      </h1>
-    </div>
-  );
-}
+    <div style={{ color: 'red', fontSize: 30, zIndex: 99999 }}>
+  NAUKA TEST BERHASIL
+</div>
 export default function Home() {
   return (
     <main style={{ position: 'relative' }}>
