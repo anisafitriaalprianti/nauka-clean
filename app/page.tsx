@@ -3,25 +3,23 @@
 export default function Page() {
   return (
     <main style={styles.wrapper}>
-      <div style={styles.glow} />
+      <div style={styles.grain} />
+      <div style={styles.blob1} />
+      <div style={styles.blob2} />
 
       <div style={styles.content}>
-        <div style={styles.logoWrap}>
-          <img
-            src="/file_00000000aa1471fab057b72e1ac28d6b.png"
-            alt="logo"
-            style={styles.logo}
-          />
-        </div>
+        {/* LOGO (NO CIRCLE WRAP) */}
+        <img
+          src="/file_00000000aa1471fab057b72e1ac28d6b.png"
+          alt="logo"
+          style={styles.logo}
+        />
 
         <p style={styles.subtitle}>
           Sebuah ruang kecil untuk mengantar momen
         </p>
 
-        {/* FIX BUTTON */}
-        <button style={styles.button}>
-          Mulai
-        </button>
+        <button style={styles.button}>Mulai</button>
 
         <div style={styles.signature}>
           “tenang, sederhana, bermakna”
@@ -37,28 +35,13 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-
-    /* 🌙 NEW NAUKA COLOR (lebih soft, bukan hitam pekat) */
-    background:
-      'radial-gradient(circle at top left, #0e0f14, #07070a 60%, #050507)',
-    color: '#fff',
     position: 'relative',
     overflow: 'hidden',
     padding: '24px',
-  },
 
-  glow: {
-    position: 'absolute',
-    width: '700px',
-    height: '700px',
-
-    /* ✨ glow dibuat lebih warm & soft */
-    background:
-      'radial-gradient(circle, rgba(255,255,255,0.08), transparent 65%)',
-
-    top: '-260px',
-    left: '-260px',
-    filter: 'blur(80px)',
+    /* 🌿 GLOBAL CANVAS FIX */
+    background: 'linear-gradient(135deg, #FAF7F2, #E8DDCF)',
+    color: '#2a2a2a',
   },
 
   content: {
@@ -70,19 +53,12 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '14px',
   },
 
-  logoWrap: {
-    padding: '26px',
-    borderRadius: '999px',
-    background: 'rgba(255,255,255,0.06)',
-    border: '1px solid rgba(255,255,255,0.12)',
-    boxShadow: '0 0 80px rgba(255,255,255,0.12)',
-    backdropFilter: 'blur(14px)',
-  },
-
+  /* ❌ NO CIRCLE WRAP ANYMORE */
   logo: {
     width: '150px',
     height: '150px',
     objectFit: 'contain',
+    filter: 'contrast(1.05) brightness(1.05)',
   },
 
   subtitle: {
@@ -90,16 +66,16 @@ const styles: Record<string, React.CSSProperties> = {
     opacity: 0.75,
     maxWidth: '280px',
     lineHeight: '1.6',
+    color: '#3a3a3a',
   },
 
-  /* 🔘 FIX BUTTON TEXT + FEEL */
   button: {
     marginTop: '14px',
     padding: '10px 28px',
     borderRadius: '999px',
-    border: '1px solid rgba(255,255,255,0.18)',
-    background: 'rgba(255,255,255,0.06)',
-    color: 'white',
+    border: '1px solid rgba(0,0,0,0.15)',
+    background: 'rgba(255,255,255,0.5)',
+    color: '#2a2a2a',
     fontSize: '13px',
     letterSpacing: '1px',
     cursor: 'pointer',
@@ -108,6 +84,40 @@ const styles: Record<string, React.CSSProperties> = {
   signature: {
     marginTop: '10px',
     fontSize: '12px',
-    opacity: 0.45,
+    opacity: 0.5,
+    color: '#3a3a3a',
+  },
+
+  /* 🌫️ PAPER GRAIN */
+  grain: {
+    position: 'absolute',
+    inset: 0,
+    backgroundImage:
+      'url("https://www.transparenttextures.com/patterns/paper-fibers.png")',
+    opacity: 0.25,
+    pointerEvents: 'none',
+  },
+
+  /* 🌿 FLOATING BLUR SHAPES */
+  blob1: {
+    position: 'absolute',
+    width: '400px',
+    height: '400px',
+    background: 'rgba(255,255,255,0.35)',
+    filter: 'blur(80px)',
+    top: '-100px',
+    left: '-120px',
+    borderRadius: '50%',
+  },
+
+  blob2: {
+    position: 'absolute',
+    width: '500px',
+    height: '500px',
+    background: 'rgba(200,180,160,0.25)',
+    filter: 'blur(100px)',
+    bottom: '-180px',
+    right: '-150px',
+    borderRadius: '50%',
   },
 };
