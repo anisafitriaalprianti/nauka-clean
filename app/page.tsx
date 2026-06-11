@@ -4,12 +4,13 @@ export default function Page() {
   return (
     <main style={styles.wrapper}>
       <div style={styles.content}>
-        {/* LOGO (NEW FILE SAFE PATH) */}
+        {/* LOGO SAFE (PAKAI FILE APA ADANYA) */}
         <img
           src="/Tak%20berjudul61_20260611085511.png"
           alt="NAUKA Logo"
           style={styles.logo}
           onError={(e) => {
+            // fallback kalau file gagal load
             e.currentTarget.style.display = 'none';
           }}
         />
@@ -32,7 +33,7 @@ export default function Page() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  /* 🌿 CLEAN NAUKA CANVAS */
+  /* 🌿 BACKGROUND NAUKA */
   wrapper: {
     minHeight: '100vh',
     display: 'flex',
@@ -45,7 +46,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '24px',
   },
 
-  /* 🌿 CENTER UNIT (NO GHOST SPACING) */
+  /* 🌿 CENTER UNIT */
   content: {
     display: 'flex',
     flexDirection: 'column',
@@ -57,7 +58,7 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: 1,
   },
 
-  /* 🌿 LOGO STABLE */
+  /* 🌿 LOGO SAFE AREA */
   logo: {
     width: '132px',
     height: '132px',
@@ -74,7 +75,7 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: '1.6',
   },
 
-  /* 🔘 TRANSPARENT BUTTON */
+  /* 🔘 BUTTON TRANSPARENT */
   button: {
     marginTop: '8px',
     padding: '10px 28px',
