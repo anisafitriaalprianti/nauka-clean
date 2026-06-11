@@ -20,7 +20,7 @@ export default function Home() {
       <h1 style={{ color: 'white', margin: 0 }}>NAUKA</h1>
 
       <p style={{ color: 'rgba(255,255,255,0.6)', margin: 0 }}>
-        “Sebuah ruang kecil untuk mengantar momen”
+        “Sebuah ruang kecil untuk mengantar momen.”
       </p>
     </div>
   );
