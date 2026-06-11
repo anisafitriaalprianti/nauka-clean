@@ -43,7 +43,7 @@ export default function Page() {
         />
 
         <p style={styles.subtitle}>
-          Sebuah ruang kecil untuk mengantar momen
+          Sebuah ruang kecil untuk mengantar momen 
         </p>
 
         <button style={styles.button}>Mulai</button>
