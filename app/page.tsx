@@ -3,21 +3,20 @@
 export default function Page() {
   return (
     <main style={styles.wrapper}>
-      <div style={styles.grain} />
-
       <div style={styles.content}>
-        {/* BRAND UNIT (LOGO + TEXT NYATU) */}
-        <div style={styles.brandBlock}>
+        {/* LOGO (CLEAN VERSION) */}
+        <div style={styles.logoWrap}>
           <img
             src="/file_00000000aa1471fab057b72e1ac28d6b.png"
-            alt="logo"
+            alt="NAUKA Logo"
             style={styles.logo}
           />
-
-          <p style={styles.subtitle}>
-            Sebuah ruang kecil untuk mengantar momen
-          </p>
         </div>
+
+        {/* TEXT */}
+        <p style={styles.subtitle}>
+          Sebuah ruang kecil untuk mengantar momen
+        </p>
 
         {/* BUTTON */}
         <button style={styles.button}>Mulai</button>
@@ -32,65 +31,59 @@ export default function Page() {
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  /* 🌿 CANVAS */
+  /* 🌿 CLEAN CANVAS */
   wrapper: {
     minHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative',
-    overflow: 'hidden',
-    padding: '24px',
 
     background: 'linear-gradient(135deg, #FAF7F2, #E8DDCF)',
     color: '#2a2a2a',
+
+    padding: '24px',
   },
 
-  /* 🌿 GLOBAL CONTENT */
+  /* 🌿 MAIN UNIT (LOGO + TEXT = 1 ENTITY) */
   content: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+
     textAlign: 'center',
-    zIndex: 5,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
 
-    gap: '6px',
-    lineHeight: 1, // 🔥 HAPUS ruang vertikal aneh
+    gap: '6px', // 🔥 rapat tapi masih breathable
+    lineHeight: 1,
   },
 
-  /* 🌿 BRAND UNIT (INI KUNCI JARAK FIX) */
-  brandBlock: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+  /* 🌿 LOGO WRAP (NO GHOST SPACE PROTECTION) */
+  logoWrap: {
+    width: '140px',
+    height: '140px',
 
-    gap: '2px', // 🔥 super rapat
-    marginBottom: '6px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
-  /* 🌿 LOGO (HAPUS RUANG BAWAH) */
+  /* 🌿 CLEAN LOGO */
   logo: {
-    width: '150px',
-    height: '150px',
+    width: '100%',
+    height: '100%',
     objectFit: 'contain',
 
-    display: 'block', // 🔥 FIX RUANG INLINE
-    margin: 0,
-    padding: 0,
+    display: 'block', // 🔥 penting biar gak ada baseline gap
   },
 
-  /* 🌿 TEXT */
   subtitle: {
     margin: 0,
-    padding: 0,
-
     fontSize: '14px',
     opacity: 0.75,
     maxWidth: '280px',
     lineHeight: '1.6',
   },
 
-  /* 🔘 BUTTON TRANSPARENT */
+  /* 🔘 TRANSPARENT BUTTON */
   button: {
     marginTop: '8px',
     padding: '10px 28px',
@@ -109,15 +102,5 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: '6px',
     fontSize: '12px',
     opacity: 0.5,
-  },
-
-  /* 🌫️ GRAIN */
-  grain: {
-    position: 'absolute',
-    inset: 0,
-    backgroundImage:
-      'url("https://www.transparenttextures.com/patterns/paper-fibers.png")',
-    opacity: 0.18,
-    pointerEvents: 'none',
   },
 };
