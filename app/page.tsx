@@ -6,7 +6,7 @@ export default function Page() {
       <div style={styles.content}>
         {/* LOGO (NEW FILE SAFE PATH) */}
         <img
-          src="/tak%20berjudul61_20260611085511.png"
+          src="/Tak%20berjudul61_20260611085511.png"
           alt="NAUKA Logo"
           style={styles.logo}
           onError={(e) => {
