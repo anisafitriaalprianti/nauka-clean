@@ -1,5 +1,14 @@
 export default function Home() {
   return (
+    <div>
+      <h1 style={{ color: 'red', fontSize: 40 }}>
+        TEST NAUKA PAGE AKTIF
+      </h1>
+    </div>
+  );
+}
+export default function Home() {
+  return (
     <main style={{ position: 'relative' }}>
       {/* 🔴 JANGAN SENTUH BACKGROUND KAMU DI SINI */}
       
