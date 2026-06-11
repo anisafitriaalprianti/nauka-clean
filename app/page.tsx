@@ -6,6 +6,7 @@ export default function Page() {
       <div style={styles.glow} />
 
       <div style={styles.content}>
+        {/* LOGO */}
         <div style={styles.logoWrap}>
           <img
             src="/file_00000000aa1471fab057b72e1ac28d6b.png"
@@ -14,12 +15,17 @@ export default function Page() {
           />
         </div>
 
+        {/* TAGLINE */}
         <p style={styles.subtitle}>
           Sebuah ruang kecil untuk mengantar momen
         </p>
 
-        <button style={styles.button}>Buka Undangan</button>
+        {/* BUTTON FIXED */}
+        <button style={styles.button}>
+          Mulai
+        </button>
 
+        {/* SIGNATURE */}
         <div style={styles.signature}>
           “tenang, sederhana, bermakna”
         </div>
@@ -46,7 +52,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: '700px',
     height: '700px',
     background:
-      'radial-gradient(circle, rgba(255,255,255,0.07), transparent 60%)',
+      'radial-gradient(circle, rgba(255,255,255,0.10), transparent 60%)',
     top: '-260px',
     left: '-260px',
     filter: 'blur(70px)',
@@ -64,9 +70,9 @@ const styles: Record<string, React.CSSProperties> = {
   logoWrap: {
     padding: '26px',
     borderRadius: '999px',
-    background: 'rgba(255,255,255,0.06)',
-    border: '1px solid rgba(255,255,255,0.12)',
-    boxShadow: '0 0 80px rgba(255,255,255,0.12)',
+    background: 'rgba(255,255,255,0.08)', // 🔥 ditingkatin biar logo keliatan
+    border: '1px solid rgba(255,255,255,0.18)',
+    boxShadow: '0 0 90px rgba(255,255,255,0.18)',
     backdropFilter: 'blur(14px)',
   },
 
@@ -74,27 +80,31 @@ const styles: Record<string, React.CSSProperties> = {
     width: '150px',
     height: '150px',
     objectFit: 'contain',
+    filter: 'brightness(1.3) contrast(1.1)', // 🔥 INI FIX LOGO GELAP
   },
 
   subtitle: {
     fontSize: '14px',
-    opacity: 0.7,
+    opacity: 0.75,
     maxWidth: '280px',
+    lineHeight: '1.6',
   },
 
   button: {
     marginTop: '14px',
     padding: '10px 28px',
     borderRadius: '999px',
-    border: '1px solid rgba(255,255,255,0.18)',
-    background: 'rgba(255,255,255,0.04)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    background: 'rgba(255,255,255,0.05)',
     color: 'white',
     fontSize: '13px',
+    letterSpacing: '1px',
+    cursor: 'pointer',
   },
 
   signature: {
     marginTop: '10px',
     fontSize: '12px',
-    opacity: 0.4,
+    opacity: 0.45,
   },
 };
